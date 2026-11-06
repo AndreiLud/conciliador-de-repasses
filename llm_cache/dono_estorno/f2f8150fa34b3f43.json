@@ -1,0 +1,15 @@
+{
+ "key": "f2f8150fa34b3f43463520f494778e375509df10578364c7d623a9a64cdbf8eb",
+ "task": "dono_estorno",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T02:28:02+00:00",
+ "system_sha256": "002e2c5cd24900efb55d308ed0ffa4f21a1b5906714b061fc9dec3889ab5b556",
+ "user": "Nota do atendimento: \"cliente insatisfeito com o pedido\"",
+ "response": "{\"trecho\": \"cliente insatisfeito\", \"responsavel\": \"indefinido\", \"confianca\": 0.4}",
+ "usage": {
+  "tokens_in": 454,
+  "tokens_out": 30,
+  "seconds": 10.9
+ }
+}

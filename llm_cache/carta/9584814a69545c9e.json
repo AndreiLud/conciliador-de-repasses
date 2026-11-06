@@ -1,0 +1,15 @@
+{
+ "key": "9584814a69545c9e3306e7f4b2ba858b494d5885b35ba58f1f6b8ec589f2ccdd",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T00:54:40+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Marmitaria Caseira\",\"periodo\":\"de 12 a 18 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Pedido pago em duplicidade\",\"efeito\":\"o restaurante recebeu a mais\",\"o_que_aconteceu\":\"O pedido 438381313 entrou duas vezes no repasse.\"},{\"tipo\":\"Taxa de pagamento errada\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"No pedido 459278421, a taxa de pagamento usada foi a de outra forma de pagamento, mais cara do que a correta.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"Durante a semana de 12 a 18 de outubro, o pedido 438381313 foi registrado duas vezes no repasse, o que causou um recebimento duplo desse valor.\",\n    \"No pedido 459278421, houve um erro na taxa de pagamento, pois foi aplicada uma opção mais cara do que a correta, resultando em um recebimento menor do que deveria.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 467,
+  "tokens_out": 112,
+  "seconds": 52.82
+ }
+}

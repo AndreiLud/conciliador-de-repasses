@@ -1,0 +1,15 @@
+{
+ "key": "fe33fdb0b3f91c1c0e3fbb34b0787f9b9b6441c7ec5f03ba12f1188d9ec5d6aa",
+ "task": "dono_estorno",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T02:25:36+00:00",
+ "system_sha256": "002e2c5cd24900efb55d308ed0ffa4f21a1b5906714b061fc9dec3889ab5b556",
+ "user": "Nota do atendimento: \"reclamação aberta pelo cliente, reembolso parcial\"",
+ "response": "{\"trecho\": \"reclamação aberta pelo cliente, reembolso parcial\", \"responsavel\": \"indefinido\", \"confianca\": 0.4}",
+ "usage": {
+  "tokens_in": 457,
+  "tokens_out": 36,
+  "seconds": 12.71
+ }
+}

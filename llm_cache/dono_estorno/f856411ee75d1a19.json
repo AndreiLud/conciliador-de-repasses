@@ -1,0 +1,15 @@
+{
+ "key": "f856411ee75d1a19bf01d7b3863b64b8d457e63f66fdde54f036cdbb6c290bd6",
+ "task": "dono_estorno",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T02:28:38+00:00",
+ "system_sha256": "002e2c5cd24900efb55d308ed0ffa4f21a1b5906714b061fc9dec3889ab5b556",
+ "user": "Nota do atendimento: \"cliente não recebeu, entregador marcou como entregue\"",
+ "response": "{\"trecho\": \"cliente não recebeu, entregador marcou como entregue\", \"responsavel\": \"plataforma\", \"confianca\": 0.9}",
+ "usage": {
+  "tokens_in": 456,
+  "tokens_out": 35,
+  "seconds": 12.4
+ }
+}

@@ -1,0 +1,66 @@
+# Everything runs locally. Containers run with your user id so files written to the
+# mounted folders stay yours (export UID and GID if your shell does not).
+#   docker compose run --rm pipeline              # pipeline replaying llm_cache/, no model server needed
+#   docker compose up app                         # Streamlit on http://localhost:8501
+#   docker compose --profile llamacpp up -d llamacpp   # the local server that built llm_cache/ (GGUF in ./models)
+#   docker compose --profile ollama up -d ollama       # or Ollama: docker compose exec ollama ollama pull qwen3.5:2b
+# The COMPOSE_* variables are separate from .env on purpose: inside the compose network the
+# model server is reached by service name, not by 127.0.0.1.
+x-app: &app-base
+  build: .
+  user: "${UID:-1000}:${GID:-1000}"
+  environment: &app-env
+    HOME: /tmp
+    LLM_PROVIDER: ${COMPOSE_LLM_PROVIDER:-llamacpp}
+    LLM_BASE_URL: ${COMPOSE_LLM_BASE_URL:-http://llamacpp:8080}
+    LLM_MODEL: ${COMPOSE_LLM_MODEL:-qwen3.5-2b-q4_k_m}
+    STREAMLIT_BROWSER_GATHER_USAGE_STATS: "false"
+
+services:
+  pipeline:
+    <<: *app-base
+    command: ["python", "run_all.py", "--offline"]
+    volumes:
+      - ./data:/app/data
+      - ./docs:/app/docs
+      - ./llm_cache:/app/llm_cache
+      - ./project_docs:/app/project_docs
+      - ./README.md:/app/README.md
+      - ./README.pt-BR.md:/app/README.pt-BR.md
+    environment:
+      <<: *app-env
+      LLM_MODE: ${COMPOSE_LLM_MODE:-offline}
+
+  app:
+    <<: *app-base
+    command: ["streamlit", "run", "app/streamlit_app.py", "--server.address=0.0.0.0", "--server.port=8501"]
+    ports:
+      - "127.0.0.1:8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./llm_cache:/app/llm_cache
+    environment:
+      <<: *app-env
+      LLM_MODE: ${COMPOSE_LLM_MODE:-cache_first}
+
+  llamacpp:
+    # Same server image used to build llm_cache/. Put the GGUF file in ./models first.
+    image: ghcr.io/ggml-org/llama.cpp@sha256:c0a11067c72bb1eb330b8bddbf9869274c195e596bf4fae55fd527102e644b85
+    profiles: ["llamacpp"]
+    command: ["-m", "/models/Qwen_Qwen3.5-2B-Q4_K_M.gguf", "--host", "0.0.0.0", "--port", "8080", "-c", "8192",
+              "-np", "1", "--reasoning-budget", "0", "--alias", "qwen3.5-2b-q4_k_m", "--no-webui"]
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - ./models:/models:ro
+
+  ollama:
+    image: ollama/ollama:0.40.15@sha256:0e59999e0e8f9fd4e704bd788a89b7e4cad399367fb1365f8c102ac662288761
+    profiles: ["ollama"]
+    ports:
+      - "127.0.0.1:11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+
+volumes:
+  ollama:

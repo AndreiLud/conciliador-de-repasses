@@ -1,0 +1,15 @@
+{
+ "key": "e0d8998216feea9d7769b7b78192fd5c146bb2b8ee54558dc8393c0fe789b585",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T00:44:13+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Parrilla Tchê\",\"periodo\":\"de 5 a 11 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Pedido entregue fora do repasse\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"O pedido 397636851 foi entregue, mas não entrou no repasse.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"O pedido número 397636851 foi entregue, mas não entrou no repasse. Isso significa que o restaurante recebeu a menos quantidade de itens que estava previsto para a semana.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 412,
+  "tokens_out": 59,
+  "seconds": 31.63
+ }
+}

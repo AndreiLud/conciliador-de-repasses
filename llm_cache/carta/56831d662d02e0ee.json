@@ -1,0 +1,15 @@
+{
+ "key": "56831d662d02e0ee03a370a2d948e0f2d514f79a9ba67e676acf104e99e18263",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T02:46:23+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Roxo Açaí\",\"periodo\":\"de 5 a 11 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Plano antigo aplicado depois da troca\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"Vocês trocaram do plano Completo para o plano Essencial em 08/10/2026, mas pedidos feitos depois da troca ainda foram calculados com as regras do plano Completo.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"A partir de 08 de outubro de 2026, o restaurante passou a receber o valor do plano Essencial, que é menor que o do plano Completo. No entanto, os pedidos feitos após essa data ainda foram calculados com base nas regras do plano antigo.\",\n    \"Isso significa que, embora o contrato tenha mudado, os valores dos pedidos posteriores continuam seguindo o plano anterior até o fim da semana.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 436,
+  "tokens_out": 107,
+  "seconds": 47.1
+ }
+}

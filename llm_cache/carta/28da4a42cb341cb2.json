@@ -1,0 +1,15 @@
+{
+ "key": "28da4a42cb341cb28798cfb696f3dd10d4881723c0598a6db19c60ebbd446ae0",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T00:36:31+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Esfiharia Zaatar\",\"periodo\":\"de 5 a 11 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Taxa de pagamento errada\",\"efeito\":\"o restaurante recebeu a mais\",\"o_que_aconteceu\":\"No pedido 378014268, a taxa de pagamento usada foi a de outra forma de pagamento, mais barata do que a correta.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"No pedido 378014268, a taxa de pagamento usada foi a de outra forma de pagamento, mais barata do que a correta.\",\n    \"O restaurante recebeu a diferença devido a esse erro de cálculo.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 425,
+  "tokens_out": 68,
+  "seconds": 35.78
+ }
+}

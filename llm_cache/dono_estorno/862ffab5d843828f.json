@@ -1,0 +1,15 @@
+{
+ "key": "862ffab5d843828f25fc46a2136c3457558148494632b55cfa2e26161dd4efa5",
+ "task": "dono_estorno",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T02:27:51+00:00",
+ "system_sha256": "002e2c5cd24900efb55d308ed0ffa4f21a1b5906714b061fc9dec3889ab5b556",
+ "user": "Nota do atendimento: \"esqueceram o guaraná\"",
+ "response": "{\"trecho\": \"esqueceram o guaraná\", \"responsavel\": \"indefinido\", \"confianca\": 0.4}",
+ "usage": {
+  "tokens_in": 454,
+  "tokens_out": 33,
+  "seconds": 11.59
+ }
+}

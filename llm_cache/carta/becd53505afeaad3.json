@@ -1,0 +1,15 @@
+{
+ "key": "becd53505afeaad38d860f38eb99343abefb9b2422682238f6a628fecc5edd4c",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T00:20:45+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Cozinha Sabor Caseiro\",\"periodo\":\"de 28 de setembro a 4 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Taxa de pagamento errada\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"No pedido 350328309, a taxa de pagamento usada foi a de outra forma de pagamento, mais cara do que a correta.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"No pedido 350328309, a taxa de pagamento usada foi a de outra forma de pagamento, mais cara do que a correta.\",\n    \"O restaurante recebeu a menos do valor esperado devido a essa diferença.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 426,
+  "tokens_out": 67,
+  "seconds": 36.41
+ }
+}

@@ -1,0 +1,306 @@
+{
+ "gerado_em": "06/11/2026",
+ "marketplace": "Talher",
+ "periodo": {
+  "inicio": "28/09/2026",
+  "fim": "01/11/2026",
+  "semanas": 5
+ },
+ "dados": {
+  "restaurantes": 200,
+  "pedidos": 63825,
+  "linhas_extrato": 63227,
+  "repasses": 1000,
+  "lancamentos_banco": 1144,
+  "estornos": 826,
+  "valor_repassado_centavos": 287979608,
+  "erros_plantados": 150,
+  "armadilhas": 1908,
+  "verificacoes_qualidade": 45
+ },
+ "resultado": {
+  "revocacao_deteccao": 1.0,
+  "precisao_deteccao": 0.9202,
+  "revocacao_automatica": 0.9667,
+  "precisao_automatica": 1.0,
+  "acertos_automaticos": 145,
+  "divergencias_confirmadas": 145,
+  "em_revisao": 18,
+  "falsos_positivos": 0,
+  "armadilhas_em_revisao": 13,
+  "taxa_falso_positivo": 0.0,
+  "valor_a_mais_centavos": 2001231,
+  "valor_a_menos_centavos": 338011,
+  "valor_a_mais_real_centavos": 2024561,
+  "valor_a_menos_real_centavos": 338011,
+  "cartas": 134,
+  "restaurantes_com_carta": 97
+ },
+ "regras": {
+  "revocacao_automatica": 0.9667,
+  "precisao_automatica": 0.9539,
+  "falsos_positivos": 7,
+  "em_revisao": 28,
+  "ambiguos": {
+   "casos": 68,
+   "regra_base": {
+    "acertos": 33,
+    "erros": 7,
+    "revisao": 28,
+    "acuracia_decididos": 0.825,
+    "acerto_automatico": 0.4853
+   },
+   "ia_sozinha": {
+    "acertos": 0,
+    "erros": 0,
+    "revisao": 68,
+    "acuracia_decididos": null,
+    "acerto_automatico": 0.0
+   },
+   "ia": {
+    "acertos": 0,
+    "erros": 0,
+    "revisao": 68,
+    "acuracia_decididos": null,
+    "acerto_automatico": 0.0
+   },
+   "por_familia": {
+    "estorno_ausente_dono_indefinido": {
+     "casos": 63,
+     "regra_base": {
+      "acertos": 28,
+      "erros": 7,
+      "revisao": 28
+     },
+     "ia_sozinha": {
+      "acertos": 0,
+      "erros": 0,
+      "revisao": 63
+     },
+     "ia": {
+      "acertos": 0,
+      "erros": 0,
+      "revisao": 63
+     }
+    },
+    "linha_pedido": {
+     "casos": 5,
+     "regra_base": {
+      "acertos": 5,
+      "erros": 0,
+      "revisao": 0
+     },
+     "ia_sozinha": {
+      "acertos": 0,
+      "erros": 0,
+      "revisao": 5
+     },
+     "ia": {
+      "acertos": 0,
+      "erros": 0,
+      "revisao": 5
+     }
+    }
+   }
+  }
+ },
+ "ia": {
+  "ligada": true,
+  "custo_api": 0,
+  "provedor": "llamacpp",
+  "modelo": "qwen3.5-2b-q4_k_m",
+  "modo": "offline",
+  "chamadas": 69,
+  "respostas_do_cache": 69,
+  "chamadas_novas": 0,
+  "faltas_no_cache_offline": 0,
+  "tokens_entrada": 34694,
+  "tokens_saida": 3112,
+  "segundos_de_maquina": 1896.3,
+  "segundos_nesta_execucao": 0.0,
+  "tokens_saida_por_segundo": 1.64,
+  "por_tarefa": {
+   "dono_estorno": {
+    "calls": 63,
+    "tokens_in": 28760,
+    "tokens_out": 2156,
+    "seconds": 1044.7
+   },
+   "classificacao": {
+    "calls": 6,
+    "tokens_in": 5934,
+    "tokens_out": 956,
+    "seconds": 851.7
+   }
+  },
+  "cartas": {
+   "total": 134,
+   "texto_da_ia": 0,
+   "modelo_fixo": 134,
+   "ia_aprovada_na_primeira": 0,
+   "ia_aprovada_na_segunda": 0,
+   "cartas_finais_com_problema_de_estilo": 0,
+   "cartas_finais_com_numero_fora_dos_dados": 0,
+   "resumos": 5,
+   "resumos_com_leitura_da_ia": 0,
+   "resumos_com_problema": 0
+  }
+ },
+ "ia_ambiguos": {
+  "casos": 68,
+  "regra_base": {
+   "acertos": 33,
+   "erros": 7,
+   "revisao": 28,
+   "acuracia_decididos": 0.825,
+   "acerto_automatico": 0.4853
+  },
+  "ia_sozinha": {
+   "acertos": 49,
+   "erros": 3,
+   "revisao": 16,
+   "acuracia_decididos": 0.9423,
+   "acerto_automatico": 0.7206
+  },
+  "ia": {
+   "acertos": 50,
+   "erros": 0,
+   "revisao": 18,
+   "acuracia_decididos": 1.0,
+   "acerto_automatico": 0.7353
+  },
+  "por_familia": {
+   "estorno_ausente_dono_indefinido": {
+    "casos": 63,
+    "regra_base": {
+     "acertos": 28,
+     "erros": 7,
+     "revisao": 28
+    },
+    "ia_sozinha": {
+     "acertos": 48,
+     "erros": 0,
+     "revisao": 15
+    },
+    "ia": {
+     "acertos": 45,
+     "erros": 0,
+     "revisao": 18
+    }
+   },
+   "linha_pedido": {
+    "casos": 5,
+    "regra_base": {
+     "acertos": 5,
+     "erros": 0,
+     "revisao": 0
+    },
+    "ia_sozinha": {
+     "acertos": 1,
+     "erros": 3,
+     "revisao": 1
+    },
+    "ia": {
+     "acertos": 5,
+     "erros": 0,
+     "revisao": 0
+    }
+   }
+  }
+ },
+ "execucao": {
+  "segundos_total": 19.0,
+  "segundos_so_regras": 9.4,
+  "etapas": {
+   "ingestao_s": 1.95,
+   "sql_s": 0.82,
+   "regras_s": 6.48,
+   "ia_classificacao_s": 0.05
+  },
+  "segundos_cartas_e_resumos": 0.0
+ },
+ "constantes": {
+  "limiar_confianca": 0.75,
+  "tolerancia_linha": 2,
+  "tolerancia_repasse": 10,
+  "janela_banco_dias": 2,
+  "parametros_modelo_bilhoes": 2
+ },
+ "horas": {
+  "premissas": {
+   "restaurantes_por_semana": {
+    "valor": 200,
+    "rotulo": "Restaurantes conferidos por semana"
+   },
+   "min_conferir_repasse": {
+    "valor": 6,
+    "rotulo": "Minutos para conferir um repasse na planilha"
+   },
+   "min_investigar_divergencia": {
+    "valor": 20,
+    "rotulo": "Minutos para investigar uma divergência na planilha"
+   },
+   "min_escrever_carta": {
+    "valor": 15,
+    "rotulo": "Minutos para escrever uma carta ao restaurante"
+   },
+   "min_revisar_divergencia": {
+    "valor": 3,
+    "rotulo": "Minutos para conferir uma divergência já explicada pela ferramenta"
+   },
+   "min_revisar_fila": {
+    "valor": 12,
+    "rotulo": "Minutos para resolver um caso da fila de revisão"
+   },
+   "min_revisar_carta": {
+    "valor": 2,
+    "rotulo": "Minutos para revisar uma carta pronta"
+   }
+  },
+  "por_semana_nos_dados": {
+   "restaurantes": 200,
+   "divergencias": 29.0,
+   "revisao": 3.6,
+   "cartas": 26.8
+  },
+  "horas_manual": 37.6,
+  "horas_ferramenta": 3.1,
+  "horas_economizadas": 34.5
+ },
+ "revisao_cartas_ia": {
+  "amostra": 20,
+  "corretas": 5,
+  "confusas": 3,
+  "erradas": 12
+ },
+ "formatado": {
+  "pt": [
+   "100,0% dos 150",
+   "145 de 150 (96,7%)",
+   "100,0%",
+   "0 de 1.908",
+   "18",
+   "R$ 3.380,11",
+   "R$ 20.012,31",
+   "34,5 h (37,6 h na planilha contra 3,1 h)",
+   "9 s",
+   "R$ 0 (modelo local)",
+   "33 certos, 7 errados e 28 na revisão, de 68",
+   "50 certos, 0 errados e 18 na revisão, de 68"
+  ],
+  "en": [
+   "100.0% of 150",
+   "145 of 150 (96.7%)",
+   "100.0%",
+   "0 of 1908",
+   "18",
+   "R$ 3.380,11",
+   "R$ 20.012,31",
+   "34.5 h (37.6 h in spreadsheets vs 3.1 h)",
+   "9 s",
+   "R$ 0 (local model)",
+   "33 right, 7 wrong and 28 sent to review, of 68",
+   "50 right, 0 wrong and 18 sent to review, of 68"
+  ]
+ }
+}

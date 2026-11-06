@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+@font-face { font-family: "Bricolage Grotesque"; src: url("../docs/vendor/fonts/bricolage-grotesque-latin-wght-normal.woff2"); font-weight: 200 800; }
+@font-face { font-family: "IBM Plex Sans"; src: url("../docs/vendor/fonts/ibm-plex-sans-latin-500-normal.woff2"); font-weight: 500; }
+@font-face { font-family: "IBM Plex Mono"; src: url("../docs/vendor/fonts/ibm-plex-mono-latin-500-normal.woff2"); font-weight: 500; }
+html, body { margin: 0; }
+body { width: 1200px; height: 630px; background: #0e1116; color: #f3f2ec; font-family: "IBM Plex Sans", sans-serif; position: relative; overflow: hidden; }
+.glow { position: absolute; right: -160px; bottom: -260px; width: 760px; height: 620px; background: radial-gradient(closest-side, rgba(198,240,90,.16), transparent); }
+.wrap { position: absolute; inset: 64px 72px; display: flex; flex-direction: column; }
+.eyebrow { font-family: "IBM Plex Mono", monospace; color: #c6f05a; letter-spacing: .14em; text-transform: uppercase; font-size: 20px; }
+h1 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 760; font-size: 76px; line-height: 1.02; letter-spacing: -0.035em; margin: 22px 0 0; max-width: 980px; }
+h1 em { font-style: normal; color: #c6f05a; }
+.stats { margin-top: auto; display: flex; gap: 0; border: 1px solid rgba(255,255,255,.14); border-radius: 18px; overflow: hidden; }
+.stat { flex: 1; padding: 22px 24px; border-right: 1px solid rgba(255,255,255,.14); }
+.stat:last-child { border-right: 0; }
+.v { font-family: "Bricolage Grotesque", sans-serif; font-size: 52px; font-weight: 720; letter-spacing: -0.03em; line-height: 1; }
+.l { color: #b3b8c2; font-size: 19px; margin-top: 8px; line-height: 1.25; }
+.mark { position: absolute; right: 72px; top: 60px; width: 64px; height: 64px; }
+</style></head>
+<body><div class="glow"></div>
+<svg class="mark" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#c6f05a"/><path d="M8 11h16M8 16h10M8 21h7" stroke="#0e1116" stroke-width="2.6" stroke-linecap="round"/><path d="M19.5 20.5l2.5 2.5 4.5-5" stroke="#0e1116" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<div class="wrap">
+  <div class="eyebrow">Conciliador de repasses</div>
+  <h1>Cada repasse conferido. <em>Cada diferença explicada.</em></h1>
+  <div class="stats">
+    <div class="stat"><div class="v" id="s1"></div><div class="l">dos erros plantados detectados</div></div>
+    <div class="stat"><div class="v" id="s2"></div><div class="l">por semana a menos, por estimativa</div></div>
+    <div class="stat"><div class="v" id="s3"></div><div class="l">de API: IA local, sem chave</div></div>
+  </div>
+</div>
+<script>
+const f = JSON.parse(decodeURIComponent(location.hash.slice(1)));
+const dec = (n, d) => new Intl.NumberFormat("pt-BR", { minimumFractionDigits: d, maximumFractionDigits: d }).format(n);
+document.getElementById("s1").textContent = dec(f.resultado.revocacao_deteccao * 100, 0) + "%";
+document.getElementById("s2").textContent = dec(f.horas.horas_economizadas, 1) + " h";
+document.getElementById("s3").textContent = "R$ 0";
+</script></body></html>

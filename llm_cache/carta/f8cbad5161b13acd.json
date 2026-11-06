@@ -1,0 +1,15 @@
+{
+ "key": "f8cbad5161b13acdae2ac8c72b625fa4e132d7daa017fdac77dd8f2f76400606",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T01:00:21+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Verde Leve\",\"periodo\":\"de 12 a 18 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Estorno não descontado\",\"efeito\":\"o restaurante recebeu a mais\",\"o_que_aconteceu\":\"O cliente do pedido 461274719 recebeu um estorno por um problema do restaurante (cliente disse que o frango veio cru por dentro), e esse estorno não foi descontado do repasse.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"O pedido número 461274719 foi cancelado devido a um problema no fornecimento de carne, mas o valor recebido pelo restaurante não foi retido. Como o estorno não foi descontado, o valor permanece no repasse da semana.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 436,
+  "tokens_out": 74,
+  "seconds": 38.9
+ }
+}

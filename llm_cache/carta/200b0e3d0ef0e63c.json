@@ -1,0 +1,15 @@
+{
+ "key": "200b0e3d0ef0e63c113499e11b6c7f1e90b98963ea6f8cfcce4e5723a84fc462",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T00:23:24+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Trem Bão Burger\",\"periodo\":\"de 28 de setembro a 4 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Repasse pago em duplicidade\",\"efeito\":\"o restaurante recebeu a mais\",\"o_que_aconteceu\":\"O repasse desta semana foi pago duas vezes no banco.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"O repasse desta semana foi pago duas vezes no banco, o que significa que o restaurante recebeu a maior parte do valor. O pedido foi feito em 28 de setembro e a data de término é 4 de outubro de 2026. A diferença entre os valores pagos e o total esperado foi gerada por essa duplicidade no pagamento.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 404,
+  "tokens_out": 90,
+  "seconds": 37.5
+ }
+}

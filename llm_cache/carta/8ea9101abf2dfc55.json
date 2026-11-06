@@ -1,0 +1,15 @@
+{
+ "key": "8ea9101abf2dfc5575186770e33d89d392009d12a532f00832f7a9c8e4ed9add",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T00:34:35+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Pizzaria Bella Napoli\",\"periodo\":\"de 5 a 11 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Estorno não descontado\",\"efeito\":\"o restaurante recebeu a mais\",\"o_que_aconteceu\":\"O cliente do pedido 390441686 recebeu um estorno por um problema do restaurante (cliente achou cabelo na comida), e esse estorno não foi descontado do repasse.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"O pedido número 390441686 foi cancelado devido a um problema no local, mas o valor recebido pelo restaurante não foi retido. Como o estorno não foi descontado, o valor permanece no repasse da semana.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 432,
+  "tokens_out": 70,
+  "seconds": 37.66
+ }
+}

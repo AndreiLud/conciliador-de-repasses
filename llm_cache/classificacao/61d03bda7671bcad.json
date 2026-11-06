@@ -1,0 +1,15 @@
+{
+ "key": "61d03bda7671bcadfb5952e2467e1e24ed2d43aed17c2755d8beed7b086e0e69",
+ "task": "classificacao",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T02:31:42+00:00",
+ "system_sha256": "351a0faa537fa040e239c2c450994a50cf8c13b90b80235d36c3f44f4b5cfb1b",
+ "user": "Classifique o caso abaixo.\n\n{\"situacao\":\"linha de pedido com valor líquido diferente do recalculado (extrato legado, só o líquido)\",\"restaurante_id\":\"R0157\",\"semana\":\"2026-W40\",\"diferenca_no_repasse\":\"-R$ 1,12\",\"opcoes\":[\"comissao_taxa_errada\",\"comissao_plano_antigo\",\"taxa_pagamento_errada\",\"cupom_plataforma_cobrado\",\"outro\"],\"evidencias\":[{\"id\":\"pedido:300466671\",\"fonte\":\"base de pedidos\",\"dados\":{\"pedido_id\":\"300466671\",\"criado_em\":\"28/09/2026 11:20\",\"concluido_em\":\"28/09/2026 11:52\",\"forma_pagamento\":\"Pix\",\"valor_itens\":\"R$ 45,90\",\"taxa_entrega\":\"R$ 4,99\",\"cupom\":\"sem cupom\",\"total_pago_cliente\":\"R$ 50,89\"}},{\"id\":\"contrato:COM-v1\",\"fonte\":\"contratos.xlsx\",\"dados\":{\"plano\":\"Completo\",\"versao\":1,\"comissao\":\"23%\",\"taxa_da_forma_de_pagamento\":\"0,99%\",\"entrega\":\"da plataforma (taxa fica com a plataforma)\"}},{\"id\":\"linha:L009615\",\"fonte\":\"extrato de repasse\",\"dados\":{\"linha_id\":\"L009615\",\"repasse_id\":\"REP-2026W40-R0157\",\"layout\":\"legado\",\"descricao\":\"Pedido nº 300466671 (plano Completo, pgto cartão de crédito)\",\"valor_liquido\":\"R$ 33,72\"}},{\"id\":\"calculo:300466671\",\"fonte\":\"recálculo do motor\",\"dados\":{\"comissao\":\"R$ 10,56\",\"taxa_pagamento\":\"R$ 0,50\",\"cupom_descontado\":\"R$ 0,00\",\"entrega_repassada\":\"R$ 0,00\",\"liquido_esperado\":\"R$ 34,84\",\"diferenca\":\"-R$ 1,12\"}}],\"hipoteses_calculadas\":[{\"tipo\":\"taxa_pagamento_errada\",\"descricao\":\"taxa de crédito (3,19%, versão 1) no lugar da correta\",\"liquido_hipotese_brl\":\"R$ 33,72\",\"confere\":true},{\"tipo\":\"comissao_taxa_errada\",\"descricao\":\"comissão de 25,5% no lugar de 23%\",\"liquido_hipotese_brl\":\"R$ 33,70\",\"confere\":true}]}",
+ "response": "{\n  \"tipo\": \"taxa_pagamento_errada\",\n  \"confianca\": 0.95,\n  \"evidencias\": [\n    \"pedido:300466671\",\n    \"contrato:COM-v1\",\n    \"linha:L009615\",\n    \"calculo:300466671\"\n  ],\n  \"explicacao\": \"A linha do extrato mostra que o valor líquido calculado pelo sistema foi de R$ 33,72, enquanto o recálculo do motor resultou em R$ 34,84, gerando uma diferença de R$ 1,12. A hipótese de taxa de pagamento errada (3,19% em vez de 23%) confere\"\n}",
+ "usage": {
+  "tokens_in": 945,
+  "tokens_out": 184,
+  "seconds": 145.61
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "key": "2bef5237b6257ff007cce6a4f4db752656a054f7a3c3b141b25dea6d080abfe0",
+ "task": "dono_estorno",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T02:26:15+00:00",
+ "system_sha256": "002e2c5cd24900efb55d308ed0ffa4f21a1b5906714b061fc9dec3889ab5b556",
+ "user": "Nota do atendimento: \"pedido chegou com 1h de atraso, motoboy parado\"",
+ "response": "{\"trecho\": \"pedido chegou com 1h de atraso, motoboy parado\", \"responsavel\": \"plataforma\", \"confianca\": 0.9}",
+ "usage": {
+  "tokens_in": 461,
+  "tokens_out": 40,
+  "seconds": 15.02
+ }
+}

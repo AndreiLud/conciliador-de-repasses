@@ -1,0 +1,15 @@
+{
+ "key": "189eeea3e7471033e1704d97c2ff4b7c8e5ba8cfa97326eb1b33f95c6ba5e37f",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T01:03:07+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Restaurante Hikari\",\"periodo\":\"de 12 a 18 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Estorno descontado duas vezes\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"O estorno do pedido 409101137 foi descontado duas vezes.\"},{\"tipo\":\"Pedido pago em duplicidade\",\"efeito\":\"o restaurante recebeu a mais\",\"o_que_aconteceu\":\"O pedido 376962476 entrou duas vezes no repasse.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"Durante a semana de 12 a 18 de outubro, o pedido 409101137 sofreu um estorno que foi descontado duas vezes, reduzindo o valor recebido. O pedido 376962476, por outro lado, foi registrado duas vezes no repasse, fazendo com que o restaurante receba um valor maior do que o pedido original.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 455,
+  "tokens_out": 103,
+  "seconds": 48.57
+ }
+}

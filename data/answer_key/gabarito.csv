@@ -1,0 +1,151 @@
+caso_id,classe,tipo,unidade,chave,restaurante_id,semana,valor_centavos,detalhe
+E0001,erro,comissao_plano_antigo,restaurante_semana,R0001|2026-W41,R0001,2026-W41,13161,plano PLUS aplicado em 42 pedidos após a troca para COM em 2026-10-06
+E0002,erro,comissao_plano_antigo,restaurante_semana,R0012|2026-W43,R0012,2026-W43,156559,plano ESS aplicado em 121 pedidos após a troca para PLUS em 2026-10-19
+E0003,erro,comissao_plano_antigo,restaurante_semana,R0191|2026-W43,R0191,2026-W43,29740,plano ESS aplicado em 29 pedidos após a troca para PLUS em 2026-10-20
+E0004,erro,comissao_plano_antigo,restaurante_semana,R0055|2026-W41,R0055,2026-W41,2024,plano PLUS aplicado em 19 pedidos após a troca para COM em 2026-10-09
+E0005,erro,comissao_plano_antigo,restaurante_semana,R0023|2026-W43,R0023,2026-W43,131269,plano ESS aplicado em 126 pedidos após a troca para COM em 2026-10-19
+E0006,erro,comissao_plano_antigo,restaurante_semana,R0059|2026-W41,R0059,2026-W41,-46217,plano COM aplicado em 54 pedidos após a troca para ESS em 2026-10-08
+E0007,erro,comissao_plano_antigo,restaurante_semana,R0199|2026-W42,R0199,2026-W42,48515,plano ESS aplicado em 35 pedidos após a troca para COM em 2026-10-16
+E0008,erro,comissao_plano_antigo,restaurante_semana,R0094|2026-W41,R0094,2026-W41,-76977,plano COM aplicado em 93 pedidos após a troca para ESS em 2026-10-10
+E0009,erro,comissao_taxa_errada,pedido,386861850,R0012,2026-W41,-246,"comissão aplicada 1500 bps, contrato 1200 bps"
+E0010,erro,comissao_taxa_errada,pedido,375185602,R0164,2026-W41,-261,"comissão aplicada 2500 bps, contrato 2300 bps"
+E0011,erro,comissao_taxa_errada,pedido,407351665,R0104,2026-W41,-174,"comissão aplicada 1500 bps, contrato 1200 bps"
+E0012,erro,comissao_taxa_errada,pedido,604510022,R0106,2026-W44,-74,"comissão aplicada 1500 bps, contrato 1200 bps"
+E0013,erro,comissao_taxa_errada,pedido,505703292,R0068,2026-W42,-153,"comissão aplicada 1500 bps, contrato 1200 bps"
+E0014,erro,comissao_taxa_errada,pedido,617113697,R0019,2026-W44,-122,"comissão aplicada 2500 bps, contrato 2300 bps"
+E0015,erro,comissao_taxa_errada,pedido,643501951,R0126,2026-W44,-149,"comissão aplicada 2800 bps, contrato 2300 bps"
+E0016,erro,comissao_taxa_errada,pedido,319842985,R0107,2026-W40,60,"comissão aplicada 2000 bps, contrato 2300 bps"
+E0017,erro,comissao_taxa_errada,pedido,395983589,R0113,2026-W41,-161,"comissão aplicada 2100 bps, contrato 1200 bps"
+E0018,erro,comissao_taxa_errada,pedido,364503291,R0158,2026-W40,-20,"comissão aplicada 1250 bps, contrato 1200 bps"
+E0019,erro,comissao_taxa_errada,pedido,573159156,R0003,2026-W43,-221,"comissão aplicada 1800 bps, contrato 1200 bps"
+E0020,erro,comissao_taxa_errada,pedido,637652780,R0095,2026-W44,-620,"comissão aplicada 3200 bps, contrato 2300 bps"
+E0021,erro,comissao_taxa_errada,pedido,559440732,R0144,2026-W43,-202,"comissão aplicada 2800 bps, contrato 2300 bps"
+E0022,erro,comissao_taxa_errada,pedido,518669354,R0113,2026-W43,-270,"comissão aplicada 1800 bps, contrato 1200 bps"
+E0023,erro,comissao_taxa_errada,pedido,361987458,R0130,2026-W40,287,"comissão aplicada 1200 bps, contrato 2000 bps"
+E0024,erro,comissao_taxa_errada,pedido,546868393,R0184,2026-W43,252,"comissão aplicada 2000 bps, contrato 2300 bps"
+E0025,erro,comissao_taxa_errada,pedido,332427779,R0103,2026-W40,-83,"comissão aplicada 2650 bps, contrato 2300 bps"
+E0026,erro,comissao_taxa_errada,pedido,480885303,R0066,2026-W42,-127,"comissão aplicada 2650 bps, contrato 2300 bps"
+E0027,erro,comissao_taxa_errada,pedido,636143536,R0120,2026-W44,-345,"comissão aplicada 1700 bps, contrato 1200 bps"
+E0028,erro,comissao_taxa_errada,pedido,459149627,R0187,2026-W42,-441,"comissão aplicada 2100 bps, contrato 1200 bps"
+E0029,erro,comissao_taxa_errada,pedido,470832368,R0186,2026-W42,-176,"comissão aplicada 2650 bps, contrato 2300 bps"
+E0030,erro,comissao_taxa_errada,pedido,590007858,R0065,2026-W44,-284,"comissão aplicada 2100 bps, contrato 1200 bps"
+E0031,erro,comissao_taxa_errada,pedido,331050691,R0131,2026-W40,463,"comissão aplicada 1200 bps, contrato 2000 bps"
+E0032,erro,comissao_taxa_errada,pedido,347003937,R0042,2026-W40,-245,"comissão aplicada 2650 bps, contrato 2300 bps"
+E0033,erro,comissao_taxa_errada,pedido,573710432,R0059,2026-W43,-13,"comissão aplicada 1250 bps, contrato 1200 bps"
+E0034,erro,taxa_pagamento_errada,pedido,459278421,R0030,2026-W42,-85,taxa de vale_refeicao aplicada em pedido pago com pix
+E0035,erro,taxa_pagamento_errada,pedido,359228894,R0173,2026-W40,-187,taxa de vale_refeicao aplicada em pedido pago com pix
+E0036,erro,taxa_pagamento_errada,pedido,409866585,R0121,2026-W41,-162,taxa de vale_refeicao aplicada em pedido pago com pix
+E0037,erro,taxa_pagamento_errada,pedido,316336547,R0032,2026-W40,325,taxa de pix aplicada em pedido pago com credito
+E0038,erro,taxa_pagamento_errada,pedido,630055000,R0085,2026-W44,-67,taxa de debito aplicada em pedido pago com pix
+E0039,erro,taxa_pagamento_errada,pedido,562552115,R0062,2026-W43,-196,taxa de vale_refeicao aplicada em pedido pago com pix
+E0040,erro,taxa_pagamento_errada,pedido,330230214,R0193,2026-W40,-47,taxa de debito aplicada em pedido pago com pix
+E0041,erro,taxa_pagamento_errada,pedido,478045040,R0053,2026-W42,-110,taxa de vale_refeicao aplicada em pedido pago com credito
+E0042,erro,taxa_pagamento_errada,pedido,378870602,R0042,2026-W41,-185,taxa de vale_refeicao aplicada em pedido pago com credito
+E0043,erro,taxa_pagamento_errada,pedido,350328309,R0112,2026-W40,-211,taxa de vale_refeicao aplicada em pedido pago com pix
+E0044,erro,taxa_pagamento_errada,pedido,614552545,R0138,2026-W44,-90,taxa de credito aplicada em pedido pago com pix
+E0045,erro,taxa_pagamento_errada,pedido,395376267,R0058,2026-W41,43,taxa de debito aplicada em pedido pago com credito
+E0046,erro,taxa_pagamento_errada,pedido,389735883,R0168,2026-W41,-29,taxa de debito aplicada em pedido pago com pix
+E0047,erro,taxa_pagamento_errada,pedido,394858435,R0144,2026-W41,78,taxa de debito aplicada em pedido pago com credito
+E0048,erro,taxa_pagamento_errada,pedido,520916778,R0049,2026-W43,-703,taxa de vale_refeicao aplicada em pedido pago com pix
+E0049,erro,taxa_pagamento_errada,pedido,378014268,R0057,2026-W41,65,taxa de debito aplicada em pedido pago com credito
+E0050,erro,taxa_pagamento_errada,pedido,494576824,R0126,2026-W42,-278,taxa de vale_refeicao aplicada em pedido pago com debito
+E0051,erro,taxa_pagamento_errada,pedido,646495353,R0024,2026-W44,88,taxa de pix aplicada em pedido pago com credito
+E0052,erro,taxa_pagamento_errada,pedido,517540563,R0094,2026-W43,47,taxa de pix aplicada em pedido pago com credito
+E0053,erro,taxa_pagamento_errada,pedido,455348931,R0021,2026-W42,163,taxa de pix aplicada em pedido pago com credito
+E0054,erro,taxa_pagamento_errada,pedido,561524629,R0005,2026-W43,90,taxa de pix aplicada em pedido pago com credito
+E0055,erro,taxa_pagamento_errada,pedido,362663299,R0094,2026-W40,-40,taxa de vale_refeicao aplicada em pedido pago com credito
+E0056,erro,taxa_pagamento_errada,pedido,491452372,R0038,2026-W42,-711,taxa de vale_refeicao aplicada em pedido pago com pix
+E0057,erro,taxa_pagamento_errada,pedido,300466671,R0157,2026-W40,-112,taxa de credito aplicada em pedido pago com pix
+E0058,erro,taxa_pagamento_errada,pedido,401514029,R0033,2026-W41,-69,taxa de vale_refeicao aplicada em pedido pago com pix
+E0059,erro,cupom_plataforma_cobrado,pedido,590790572,R0111,2026-W44,-525,cupom TALHER10 da plataforma descontado do restaurante
+E0060,erro,cupom_plataforma_cobrado,pedido,374641984,R0096,2026-W41,-1500,cupom BEMVINDO15 da plataforma descontado do restaurante
+E0061,erro,cupom_plataforma_cobrado,pedido,460193001,R0172,2026-W42,-800,cupom SEXTOU8 da plataforma descontado do restaurante
+E0062,erro,cupom_plataforma_cobrado,pedido,330446407,R0042,2026-W40,-800,cupom SEXTOU8 da plataforma descontado do restaurante
+E0063,erro,cupom_plataforma_cobrado,pedido,589384712,R0197,2026-W44,-800,cupom SEXTOU8 da plataforma descontado do restaurante
+E0064,erro,cupom_plataforma_cobrado,pedido,527411483,R0162,2026-W43,-479,cupom TALHER10 da plataforma descontado do restaurante
+E0065,erro,cupom_plataforma_cobrado,pedido,315330029,R0129,2026-W40,-700,cupom TALHER10 da plataforma descontado do restaurante
+E0066,erro,cupom_plataforma_cobrado,pedido,572779591,R0192,2026-W43,-779,cupom TALHER10 da plataforma descontado do restaurante
+E0067,erro,cupom_plataforma_cobrado,pedido,645393850,R0150,2026-W44,-1500,cupom BEMVINDO15 da plataforma descontado do restaurante
+E0068,erro,cupom_plataforma_cobrado,pedido,365520517,R0141,2026-W40,-1200,cupom VOLTA12 da plataforma descontado do restaurante
+E0069,erro,cupom_plataforma_cobrado,pedido,340593332,R0168,2026-W40,-800,cupom SEXTOU8 da plataforma descontado do restaurante
+E0070,erro,cupom_plataforma_cobrado,pedido,330221028,R0104,2026-W40,-1200,cupom VOLTA12 da plataforma descontado do restaurante
+E0071,erro,cupom_plataforma_cobrado,pedido,314083182,R0167,2026-W40,-800,cupom SEXTOU8 da plataforma descontado do restaurante
+E0072,erro,cupom_plataforma_cobrado,pedido,490270873,R0157,2026-W42,-1200,cupom VOLTA12 da plataforma descontado do restaurante
+E0073,erro,cupom_plataforma_cobrado,pedido,371444951,R0131,2026-W41,-800,cupom SEXTOU8 da plataforma descontado do restaurante
+E0074,erro,cupom_plataforma_cobrado,pedido,460537802,R0129,2026-W42,-1500,cupom BEMVINDO15 da plataforma descontado do restaurante
+E0075,erro,cupom_plataforma_cobrado,pedido,488682060,R0016,2026-W42,-1175,cupom VOLTA12 da plataforma descontado do restaurante
+E0076,erro,cupom_plataforma_cobrado,pedido,307533373,R0150,2026-W40,-520,cupom TALHER10 da plataforma descontado do restaurante
+E0077,erro,cupom_plataforma_cobrado,pedido,480522829,R0150,2026-W42,-1500,cupom BEMVINDO15 da plataforma descontado do restaurante
+E0078,erro,cupom_plataforma_cobrado,pedido,560609512,R0154,2026-W43,-790,cupom TALHER10 da plataforma descontado do restaurante
+E0079,erro,estorno_nao_descontado,estorno,EST-342454,R0079,2026-W43,2050,estorno do restaurante sem desconto
+E0080,erro,estorno_nao_descontado,estorno,EST-188756,R0177,2026-W41,1290,estorno do restaurante sem desconto
+E0081,erro,estorno_nao_descontado,estorno,EST-211288,R0036,2026-W41,3270,estorno do restaurante sem desconto
+E0082,erro,estorno_nao_descontado,estorno,EST-469186,R0087,2026-W44,4050,estorno do restaurante sem desconto
+E0083,erro,estorno_nao_descontado,estorno,EST-115828,R0068,2026-W40,4500,estorno do restaurante sem desconto
+E0084,erro,estorno_nao_descontado,estorno,EST-358784,R0177,2026-W43,6690,estorno do restaurante sem desconto
+E0085,erro,estorno_nao_descontado,estorno,EST-457110,R0145,2026-W44,8450,estorno do restaurante sem desconto
+E0086,erro,estorno_nao_descontado,estorno,EST-253496,R0168,2026-W42,1640,estorno do restaurante sem desconto
+E0087,erro,estorno_nao_descontado,estorno,EST-315025,R0116,2026-W42,3080,estorno do restaurante sem desconto
+E0088,erro,estorno_nao_descontado,estorno,EST-468949,R0097,2026-W44,8590,estorno do restaurante sem desconto
+E0089,erro,estorno_nao_descontado,estorno,EST-391674,R0066,2026-W43,3350,estorno do restaurante sem desconto
+E0090,erro,estorno_nao_descontado,estorno,EST-458917,R0069,2026-W44,1930,estorno do restaurante sem desconto
+E0091,erro,estorno_nao_descontado,estorno,EST-205248,R0020,2026-W41,2540,estorno do restaurante sem desconto
+E0092,erro,estorno_nao_descontado,estorno,EST-492234,R0120,2026-W44,2110,estorno do restaurante sem desconto
+E0093,erro,estorno_nao_descontado,estorno,EST-419428,R0020,2026-W43,5550,estorno do restaurante sem desconto
+E0094,erro,estorno_duplicado,estorno,EST-215402,R0073,2026-W41,-6190,estorno descontado duas vezes
+E0095,erro,estorno_duplicado,estorno,EST-142049,R0026,2026-W40,-9990,estorno descontado duas vezes
+E0096,erro,estorno_duplicado,estorno,EST-165080,R0015,2026-W41,-2650,estorno descontado duas vezes
+E0097,erro,estorno_duplicado,estorno,EST-360635,R0148,2026-W43,-1950,estorno descontado duas vezes
+E0098,erro,estorno_duplicado,estorno,EST-256788,R0140,2026-W42,-9550,estorno descontado duas vezes
+E0099,erro,estorno_duplicado,estorno,EST-170423,R0153,2026-W41,-6100,estorno descontado duas vezes
+E0100,erro,estorno_duplicado,estorno,EST-396953,R0184,2026-W43,-1500,estorno descontado duas vezes
+E0101,erro,estorno_duplicado,estorno,EST-366613,R0118,2026-W43,-1120,estorno descontado duas vezes
+E0102,erro,estorno_duplicado,estorno,EST-364983,R0178,2026-W43,-3500,estorno descontado duas vezes
+E0103,erro,estorno_duplicado,estorno,EST-108825,R0033,2026-W40,-1040,estorno descontado duas vezes
+E0104,erro,pedido_ausente,pedido,515931264,R0072,2026-W43,-1329,pedido entregue fora do repasse
+E0105,erro,pedido_ausente,pedido,602640522,R0014,2026-W44,-10548,pedido entregue fora do repasse
+E0106,erro,pedido_ausente,pedido,365797468,R0057,2026-W40,-3209,pedido entregue fora do repasse
+E0107,erro,pedido_ausente,pedido,504179687,R0141,2026-W42,-4168,pedido entregue fora do repasse
+E0108,erro,pedido_ausente,pedido,574410663,R0076,2026-W43,-9875,pedido entregue fora do repasse
+E0109,erro,pedido_ausente,pedido,331525814,R0005,2026-W40,-3718,pedido entregue fora do repasse
+E0110,erro,pedido_ausente,pedido,553943445,R0075,2026-W43,-3561,pedido entregue fora do repasse
+E0111,erro,pedido_ausente,pedido,507626207,R0012,2026-W42,-5624,pedido entregue fora do repasse
+E0112,erro,pedido_ausente,pedido,632414181,R0126,2026-W44,-14594,pedido entregue fora do repasse
+E0113,erro,pedido_ausente,pedido,397751788,R0003,2026-W41,-2351,pedido entregue fora do repasse
+E0114,erro,pedido_ausente,pedido,397636851,R0126,2026-W41,-4276,pedido entregue fora do repasse
+E0115,erro,pedido_ausente,pedido,456265168,R0122,2026-W42,-9485,pedido entregue fora do repasse
+E0116,erro,pedido_ausente,pedido,348633457,R0026,2026-W40,-9631,pedido entregue fora do repasse
+E0117,erro,pedido_ausente,pedido,321927616,R0021,2026-W40,-4801,pedido entregue fora do repasse
+E0118,erro,pedido_ausente,pedido,549193642,R0174,2026-W43,-4667,pedido entregue fora do repasse
+E0119,erro,pedido_ausente,pedido,369648544,R0083,2026-W41,-3057,pedido entregue fora do repasse
+E0120,erro,pedido_ausente,pedido,623758804,R0126,2026-W44,-2991,pedido entregue fora do repasse
+E0121,erro,pedido_ausente,pedido,357297842,R0065,2026-W40,-1867,pedido entregue fora do repasse
+E0122,erro,pedido_ausente,pedido,488946619,R0062,2026-W42,-5742,pedido entregue fora do repasse
+E0123,erro,pedido_ausente,pedido,336399026,R0145,2026-W40,-7367,pedido entregue fora do repasse
+E0124,erro,pedido_duplicado,pedido,450743079,R0145,2026-W42,4787,pedido repetido no mesmo repasse
+E0125,erro,pedido_duplicado,pedido,386741774,R0145,2026-W41,3204,pedido repetido no mesmo repasse
+E0126,erro,pedido_duplicado,pedido,475195644,R0196,2026-W43,1381,pedido já pago na 2026-W42 e repetido na 2026-W43
+E0127,erro,pedido_duplicado,pedido,539009918,R0052,2026-W43,5584,pedido repetido no mesmo repasse
+E0128,erro,pedido_duplicado,pedido,388636914,R0109,2026-W41,2650,pedido repetido no mesmo repasse
+E0129,erro,pedido_duplicado,pedido,387131610,R0017,2026-W42,11904,pedido já pago na 2026-W41 e repetido na 2026-W42
+E0130,erro,pedido_duplicado,pedido,627531234,R0091,2026-W44,1591,pedido repetido no mesmo repasse
+E0131,erro,pedido_duplicado,pedido,625085426,R0183,2026-W44,5627,pedido repetido no mesmo repasse
+E0132,erro,pedido_duplicado,pedido,486345478,R0032,2026-W43,8195,pedido já pago na 2026-W42 e repetido na 2026-W43
+E0133,erro,pedido_duplicado,pedido,334018097,R0148,2026-W40,2276,pedido repetido no mesmo repasse
+E0134,erro,pedido_duplicado,pedido,451697175,R0114,2026-W42,3901,pedido repetido no mesmo repasse
+E0135,erro,pedido_duplicado,pedido,321311761,R0158,2026-W41,3660,pedido já pago na 2026-W40 e repetido na 2026-W41
+E0136,erro,pedido_duplicado,pedido,515021980,R0118,2026-W43,3324,pedido repetido no mesmo repasse
+E0137,erro,pedido_duplicado,pedido,438381313,R0030,2026-W42,3198,pedido repetido no mesmo repasse
+E0138,erro,pedido_duplicado,pedido,376962476,R0140,2026-W42,4356,pedido já pago na 2026-W41 e repetido na 2026-W42
+E0139,erro,transferencia_divergente,repasse,REP-2026W40-R0078,R0078,2026-W40,10000,"R$ 100,00 a mais"
+E0140,erro,transferencia_divergente,repasse,REP-2026W41-R0199,R0199,2026-W41,1800,dígitos trocados na digitação
+E0141,erro,transferencia_divergente,repasse,REP-2026W42-R0078,R0078,2026-W42,-27329,pagamento parcial
+E0142,erro,transferencia_divergente,repasse,REP-2026W43-R0110,R0110,2026-W43,-1000,"tarifa de R$ 10,00 descontada indevidamente"
+E0143,erro,transferencia_divergente,repasse,REP-2026W43-R0196,R0196,2026-W43,-1000,"tarifa de R$ 10,00 descontada indevidamente"
+E0144,erro,transferencia_divergente,repasse,REP-2026W42-R0032,R0032,2026-W42,540000,dígitos trocados na digitação
+E0145,erro,transferencia_divergente,repasse,REP-2026W42-R0169,R0169,2026-W42,-1000,"tarifa de R$ 10,00 descontada indevidamente"
+E0146,erro,transferencia_divergente,repasse,REP-2026W41-R0114,R0114,2026-W41,-1000,"tarifa de R$ 10,00 descontada indevidamente"
+E0147,erro,repasse_duplicado,repasse,REP-2026W40-R0137,R0137,2026-W40,138454,mesmo repasse pago duas vezes
+E0148,erro,repasse_duplicado,repasse,REP-2026W41-R0096,R0096,2026-W41,241706,mesmo repasse pago duas vezes
+E0149,erro,repasse_duplicado,repasse,REP-2026W42-R0189,R0189,2026-W42,284186,mesmo repasse pago duas vezes
+E0150,erro,repasse_duplicado,repasse,REP-2026W42-R0162,R0162,2026-W42,300458,mesmo repasse pago duas vezes

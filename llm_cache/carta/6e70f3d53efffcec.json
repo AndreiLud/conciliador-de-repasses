@@ -1,0 +1,15 @@
+{
+ "key": "6e70f3d53efffcec4a3b27300ad12cfdf08254b054de1e2e5395ad50634efa62",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T01:19:02+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Trattoria Bella Itália\",\"periodo\":\"de 19 a 25 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Pedido entregue fora do repasse\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"O pedido 553943445 foi entregue, mas não entrou no repasse.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"O pedido 553943445 foi entregue, mas não entrou no repasse. Isso significa que o restaurante recebeu a menos quantidade de itens que estava previsto para a semana.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 413,
+  "tokens_out": 58,
+  "seconds": 31.67
+ }
+}

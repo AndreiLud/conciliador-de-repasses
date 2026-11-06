@@ -1,0 +1,15 @@
+{
+ "key": "9dfb56a2089a61c9dc5d9bd027198a2da6f9241c36ae9a0799f77807a1eb0add",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T01:27:08+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Espetinho Brasa Viva\",\"periodo\":\"de 19 a 25 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Estorno descontado duas vezes\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"O estorno do pedido 525553948 foi descontado duas vezes.\"},{\"tipo\":\"Comissão com taxa errada\",\"efeito\":\"o restaurante recebeu a mais\",\"o_que_aconteceu\":\"No pedido 546868393, a comissão foi calculada com uma taxa menor do que a prevista no contrato.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"Durante a semana de 19 a 25 de outubro, o pedido 525553948 sofreu um estorno que foi descontado duas vezes, reduzindo o valor recebido pelo restaurante.\",\n    \"No pedido 546868393, a comissão foi calculada com uma taxa menor do que a prevista no contrato, o que resultou em um valor maior recebido pelo restaurante.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 467,
+  "tokens_out": 108,
+  "seconds": 51.74
+ }
+}

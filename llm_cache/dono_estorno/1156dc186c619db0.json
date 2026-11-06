@@ -1,0 +1,15 @@
+{
+ "key": "1156dc186c619db0513cfc84f5ec65aa13b2ac86a1f780ed7ede8d5fe453dad9",
+ "task": "dono_estorno",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T02:25:23+00:00",
+ "system_sha256": "002e2c5cd24900efb55d308ed0ffa4f21a1b5906714b061fc9dec3889ab5b556",
+ "user": "Nota do atendimento: \"pedido pronto ficou 50 min na loja esperando coleta\"",
+ "response": "{\"trecho\": \"pedido pronto ficou 50 min na loja esperando coleta\", \"responsavel\": \"indefinido\", \"confianca\": 0.4}",
+ "usage": {
+  "tokens_in": 458,
+  "tokens_out": 37,
+  "seconds": 13.19
+ }
+}

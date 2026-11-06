@@ -1,0 +1,15 @@
+{
+ "key": "8d285f6d2b97e8d42bbd8dbb772bcf037cb22e3e2a6a681261faa53452fe8368",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T02:48:36+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Nonna Rosa Pizzas\",\"periodo\":\"de 19 a 25 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Plano antigo aplicado depois da troca\",\"efeito\":\"o restaurante recebeu a mais\",\"o_que_aconteceu\":\"Vocês trocaram do plano Essencial para o plano Parceiro Plus em 19/10/2026, mas pedidos feitos depois da troca ainda foram calculados com as regras do plano Essencial.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"A partir de 19 de outubro, o restaurante passou a receber o valor do plano Parceiro Plus. No entanto, os pedidos feitos após essa data ainda seguem os cálculos do plano antigo, Essencial.\",\n    \"Isso significa que a diferença entre os valores de cada pedido foi aplicada de acordo com as regras do plano antigo, mesmo que o contrato tenha sido alterado.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 439,
+  "tokens_out": 98,
+  "seconds": 44.9
+ }
+}

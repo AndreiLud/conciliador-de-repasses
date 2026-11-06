@@ -1,0 +1,15 @@
+{
+ "key": "0866886b9e8422842b2bf724158f386d913f9266df20d3fe77cb19ae5d9207a0",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T01:40:13+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Casa Zaatar\",\"periodo\":\"de 26 de outubro a 1 de novembro de 2026\",\"diferencas\":[{\"tipo\":\"Taxa de pagamento errada\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"No pedido 614552545, a taxa de pagamento usada foi a de outra forma de pagamento, mais cara do que a correta.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"No pedido 614552545, a taxa de pagamento usada foi a de outra forma de pagamento, mais cara do que a correta.\",\n    \"O restaurante recebeu a menos devido a essa diferença.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 423,
+  "tokens_out": 65,
+  "seconds": 34.76
+ }
+}

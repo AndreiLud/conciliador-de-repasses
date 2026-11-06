@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conciliador de repasses</title>
+<meta name="description" content="Ferramenta que confere o repasse semanal de um marketplace de delivery para restaurantes, explica cada divergência e escreve a carta. IA local, dados sintéticos.">
+<meta name="theme-color" content="#0e1116">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Conciliador de repasses">
+<meta property="og:description" content="Cada repasse conferido, cada diferença explicada. Regras para a conta, IA local para o que é texto, revisão humana para o que é incerto.">
+<meta property="og:url" content="https://andreilud.github.io/conciliador-de-repasses/">
+<meta property="og:image" content="https://andreilud.github.io/conciliador-de-repasses/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Conciliador de repasses: erros detectados, horas economizadas por estimativa e alertas falsos">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://andreilud.github.io/conciliador-de-repasses/img/og.png">
+<link rel="canonical" href="https://andreilud.github.io/conciliador-de-repasses/">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="vendor/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="vendor/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="data/facts.json" as="fetch" crossorigin>
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="css/style.css">
+<script type="module" src="js/app.js"></script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-ok" viewBox="0 0 16 16"><path d="M3 8.5l3.2 3.2L13 4.8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-more" viewBox="0 0 16 16"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-less" viewBox="0 0 16 16"><path d="M8 3v10M3.5 8.5L8 13l4.5-4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-review" viewBox="0 0 16 16"><circle cx="8" cy="5.2" r="2.7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M2.8 14c.6-2.9 2.6-4.4 5.2-4.4s4.6 1.5 5.2 4.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-x" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-info" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 7.2V11.5M8 4.6v.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+</svg>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topbar dark">
+  <div class="wrap">
+    <a class="brand" href="#topo"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#c6f05a"/><path d="M8 11h16M8 16h10M8 21h7" stroke="#0e1116" stroke-width="2.6" stroke-linecap="round"/><path d="M19.5 20.5l2.5 2.5 4.5-5" stroke="#0e1116" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Conciliador de repasses</a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#antes-e-depois">Antes e depois</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#demo">Demo</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#limites">Limites</a>
+    </nav>
+    <a class="btn btn-accent cta-small" href="#demo">Abrir a demo</a>
+  </div>
+</header>
+
+<main id="conteudo">
+<section class="hero dark" id="topo">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Conciliação financeira de marketplace</p>
+        <h1>Cada repasse conferido. <em>Cada diferença explicada.</em></h1>
+        <p class="lead">Um marketplace de delivery repassa toda semana o dinheiro das vendas para centenas de restaurantes. O financeiro confere em planilha, linha a linha. Esta ferramenta recalcula cada repasse, cruza com o extrato e com o banco, explica as divergências e escreve a carta para o restaurante.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-accent" href="#demo">Ver a demo</a>
+          <a class="btn btn-ghost" href="#como-funciona">Como funciona</a>
+        </div>
+        <p class="disclaimer"><svg width="16" height="16" aria-hidden="true"><use href="#i-info"/></svg><span>Dados sintéticos de um marketplace fictício, o Talher. Taxas e planos são ilustrativos. Nenhum dado de empresa real.</span></p>
+      </div>
+      <div class="ledger" aria-label="Exemplo ilustrativo de extrato conferido pela ferramenta" role="img">
+        <div class="ledger-head"><span>Exemplo ilustrativo</span><span>conferido em segundos</span></div>
+        <div class="ledger-row"><span class="ref">Pedido 4471</span><span class="badge ok"><svg aria-hidden="true"><use href="#i-ok"/></svg>Certo</span></div>
+        <div class="ledger-row"><span class="ref">Pedido 4472</span><span class="badge less"><svg aria-hidden="true"><use href="#i-less"/></svg>Recebeu a menos</span><span class="what">Cupom da plataforma cobrado do restaurante</span></div>
+        <div class="ledger-row"><span class="ref">Pedido 4475</span><span class="badge more"><svg aria-hidden="true"><use href="#i-more"/></svg>Recebeu a mais</span><span class="what">Pedido pago em duplicidade</span></div>
+        <div class="ledger-row"><span class="ref">Estorno 9310</span><span class="badge review"><svg aria-hidden="true"><use href="#i-review"/></svg>Revisão humana</span><span class="what">Nota do atendimento não diz de quem foi a culpa</span></div>
+        <div class="ledger-row"><span class="ref">Banco</span><span class="badge ok"><svg aria-hidden="true"><use href="#i-ok"/></svg>Certo</span><span class="what">Pix devolvido e reenviado, sem duplicidade</span></div>
+      </div>
+    </div>
+    <div class="stats" aria-label="Resultados principais">
+      <div class="stat"><div class="stat-value num"><span data-fact="resultado.revocacao_deteccao" data-format="pct0">100%</span></div><div class="stat-label">dos <span data-fact="dados.erros_plantados">150</span> erros plantados foram detectados</div></div>
+      <div class="stat"><div class="stat-value num"><span data-fact="resultado.acertos_automaticos">145</span><small>/<span data-fact="dados.erros_plantados">150</span></small></div><div class="stat-label">confirmados com a causa certa, sem revisão humana</div></div>
+      <div class="stat"><div class="stat-value num"><span data-fact="horas.horas_economizadas" data-format="dec1">34,5</span><small> h</small></div><div class="stat-label">por semana a menos de trabalho manual</div><span class="stat-tag">estimativa</span></div>
+      <div class="stat"><div class="stat-value num"><span data-fact="resultado.falsos_positivos">0</span></div><div class="stat-label">alertas falsos em <span data-fact="dados.armadilhas" data-format="int">1.908</span> armadilhas plantadas</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="antes-e-depois">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Antes e depois</p>
+      <h2>Da planilha linha a linha para uma fila do que importa</h2>
+      <p class="lead">O tempo vem de uma estimativa com premissas abertas. Dá para mudar cada premissa na calculadora, mais abaixo.</p>
+    </div>
+    <div class="compare">
+      <article class="panel reveal">
+        <h3><span>Na planilha</span><span class="time num"><span data-fact="horas.horas_manual" data-format="dec1">37,6</span><small> h por semana</small></span></h3>
+        <ol class="steps">
+          <li>Baixar quatro relatórios e juntar numa planilha.</li>
+          <li>Achar o contrato de cada restaurante e a taxa de cada forma de pagamento.</li>
+          <li>Recalcular o repasse pedido por pedido.</li>
+          <li>Conferir o extrato do banco, lançamento a lançamento.</li>
+          <li>Investigar cada diferença até achar a causa.</li>
+          <li>Escrever a explicação para o restaurante.</li>
+          <li>Montar o relatório da semana.</li>
+        </ol>
+        <p class="estimate">Estimativa para <span data-fact="dados.restaurantes">200</span> restaurantes por semana.</p>
+      </article>
+      <article class="panel after reveal">
+        <h3><span>Com a ferramenta</span><span class="time num"><span data-fact="horas.horas_ferramenta" data-format="dec1">3,1</span><small> h por semana</small></span></h3>
+        <ol class="steps">
+          <li>Subir os arquivos que o financeiro já recebe.</li>
+          <li>Conferir as divergências, cada uma com causa, valor e evidências.</li>
+          <li>Resolver a fila de revisão humana.</li>
+          <li>Aprovar as cartas e o relatório em Excel.</li>
+        </ol>
+        <p class="estimate">O processamento do mês leva segundos com regras e cache. Gerar as respostas da IA levou o tempo de máquina mostrado em Resultados para o mês todo, cerca de um quinto disso por semana.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="como-funciona" style="padding-top:16px">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Como funciona</p>
+      <h2>Regra para a conta, IA para o texto, pessoa para a dúvida</h2>
+      <p class="lead">Cada etapa diz quem decide. A maior parte é regra explícita. A IA foi testada onde a evidência é texto e onde mais de uma causa explica o mesmo valor. Ela decide só onde foi melhor que a regra: na nota do atendimento.</p>
+    </div>
+    <ol class="flow">
+      <li class="rule reveal"><span class="kind">Regra</span><h3>Ingestão e qualidade</h3><p>Lê CSV, Excel e o extrato do banco no formato brasileiro. Valida colunas, remove linhas repetidas e registra cada decisão no log de qualidade.</p></li>
+      <li class="rule reveal"><span class="kind">Regra</span><h3>Recálculo</h3><p>Aplica o contrato vigente na data de cada pedido: comissão, taxa da forma de pagamento, cupom e entrega. Tudo em centavos inteiros.</p></li>
+      <li class="rule reveal"><span class="kind">Regra</span><h3>Cruzamento</h3><p>Casa pedidos e estornos com o extrato pelo identificador. Casa o banco com o repasse por valor, data, CNPJ, conta e nome.</p></li>
+      <li class="rule reveal"><span class="kind">Regra</span><h3>Detecção</h3><p>Regras explícitas acham cada divergência e classificam as óbvias. Diferenças de até <span data-fact="constantes.tolerancia_linha" data-format="brl">R$ 0,02</span> por linha são arredondamento.</p></li>
+      <li class="ai reveal"><span class="kind">IA local</span><h3>Casos ambíguos</h3><p>Um modelo de <span data-fact="constantes.parametros_modelo_bilhoes">2</span> bilhões de parâmetros, rodando na máquina, lê a nota do atendimento dos estornos sem responsável, cita o trecho que decide e dá uma confiança. Nas linhas com mais de uma causa possível, a regra foi melhor no teste e decide; a IA só é medida.</p></li>
+      <li class="human reveal"><span class="kind">Revisão humana</span><h3>Fila de revisão</h3><p>Confiança abaixo de <span data-fact="constantes.limiar_confianca" data-format="dec2">0,75</span>, evidência inexistente ou número fora dos dados: o caso para numa fila, com tudo o que a pessoa precisa para decidir.</p></li>
+      <li class="rule reveal"><span class="kind">Regra</span><h3>Cartas e resumo</h3><p>Tabela, valores, explicação e próximo passo vêm do código. A IA foi testada para escrever a explicação: numa revisão de <span data-fact="revisao_cartas_ia.amostra">20</span> cartas, <span data-fact="revisao_cartas_ia.erradas">12</span> tinham fato errado ou inventado. Por isso essa parte ficou desligada.</p></li>
+      <li class="rule reveal"><span class="kind">Regra</span><h3>Relatório</h3><p>Excel para o financeiro com resumo, divergências por tipo e por restaurante, fila de revisão e log de qualidade.</p></li>
+    </ol>
+    <div class="principle reveal">
+      <h3>A IA <em>não faz conta</em>.</h3>
+      <ul>
+        <li><svg width="18" height="18" aria-hidden="true"><use href="#i-ok"/></svg><span><strong>Dinheiro só em código.</strong> Valores em centavos inteiros, taxas em pontos-base, calculados em SQL com DuckDB. Nenhum número de ponto flutuante.</span></li>
+        <li><svg width="18" height="18" aria-hidden="true"><use href="#i-ok"/></svg><span><strong>Saída validada.</strong> Toda resposta do modelo é JSON conferido por schema. Tipo fora das opções ou evidência inventada derruba a resposta.</span></li>
+        <li><svg width="18" height="18" aria-hidden="true"><use href="#i-ok"/></svg><span><strong>Número conferido.</strong> Todo número escrito pelo modelo precisa existir nos dados. Se não existir, o texto é refeito ou o caso vai para revisão.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="demo" id="demo" aria-labelledby="demo-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Demo interativa</p>
+      <h2 id="demo-title">Escolha a semana e o restaurante</h2>
+      <p class="lead">São os resultados reais da última execução do pipeline, gravados em arquivos leves. Nada aqui chama uma API.</p>
+      <ul class="legend" aria-label="Legenda das cores">
+        <li><span class="badge ok"><svg aria-hidden="true"><use href="#i-ok"/></svg>Certo</span></li>
+        <li><span class="badge more"><svg aria-hidden="true"><use href="#i-more"/></svg>A favor do restaurante: recebeu a mais</span></li>
+        <li><span class="badge less"><svg aria-hidden="true"><use href="#i-less"/></svg>A favor da plataforma: recebeu a menos</span></li>
+        <li><span class="badge review"><svg aria-hidden="true"><use href="#i-review"/></svg>Revisão humana</span></li>
+      </ul>
+    </div>
+    <div class="controls">
+      <div class="field"><label for="sel-week">Semana</label><select id="sel-week"></select></div>
+      <div class="field"><label for="sel-rest">Restaurante</label><select id="sel-rest"></select></div>
+    </div>
+    <p class="visually-hidden" id="board-status" aria-live="polite"></p>
+    <div class="board" id="board">
+      <div class="empty">Carregando os dados da semana.</div>
+    </div>
+  </div>
+</section>
+
+<section id="resultados">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Resultados</p>
+      <h2>Medido contra um gabarito</h2>
+      <p class="lead">Como os erros foram plantados de propósito, dá para medir tudo: o que foi achado, o que escapou, o que virou alerta falso e o que a IA acrescenta de fato.</p>
+    </div>
+    <div class="grid-2">
+      <article class="panel reveal">
+        <h3>Precisão e revocação por tipo de erro</h3>
+        <p class="chart-note">Revocação: dos erros plantados de cada tipo, quantos foram confirmados com a causa certa. Precisão: das divergências confirmadas daquele tipo, quantas eram erro mesmo.</p>
+        <div class="table-scroll"><table class="metric-table" id="tbl-types"><caption class="visually-hidden">Precisão e revocação por tipo de erro</caption></table></div>
+      </article>
+      <article class="panel reveal">
+        <h3>Armadilhas: o que parece erro e não é</h3>
+        <p class="chart-note">Falso positivo é uma armadilha que virou divergência confirmada. Ir para a revisão custa tempo de analista, mas não gera carta errada.</p>
+        <div class="table-scroll"><table class="metric-table" id="tbl-traps"><caption class="visually-hidden">Armadilhas e falsos positivos</caption></table></div>
+      </article>
+    </div>
+    <div class="grid-2" style="margin-top:16px">
+      <article class="panel reveal" id="ai-compare">
+        <h3>O que a IA acrescenta nos casos ambíguos</h3>
+        <p class="chart-note" id="ai-compare-note"></p>
+        <div class="stack" id="stack"></div>
+        <ul class="legend" style="margin-top:14px">
+          <li><span class="badge ok"><svg aria-hidden="true"><use href="#i-ok"/></svg>Acertou</span></li>
+          <li><span class="badge err"><svg aria-hidden="true"><use href="#i-x"/></svg>Errou</span></li>
+          <li><span class="badge review"><svg aria-hidden="true"><use href="#i-review"/></svg>Mandou para revisão</span></li>
+        </ul>
+        <div id="ai-families"></div>
+      </article>
+      <article class="panel reveal">
+        <h3>Custo, tempo e dinheiro</h3>
+        <div class="kpis" id="kpis" style="margin-top:14px"></div>
+      </article>
+    </div>
+    <div class="calc reveal" id="calc" style="margin-top:16px">
+      <div>
+        <span class="tag">Estimativa</span>
+        <h3>Calculadora de horas economizadas</h3>
+        <p class="calc-sub">Mude as premissas e o número muda na hora. A quantidade de divergências, de casos em revisão e de cartas por restaurante vem da execução; o resto é premissa.</p>
+        <div class="calc-fields" id="calc-fields"></div>
+      </div>
+      <div class="calc-out" aria-live="polite">
+        <div class="calc-big num" id="calc-saved">0 h</div>
+        <div class="calc-sub">por semana a menos de trabalho manual</div>
+        <div class="calc-split">
+          <div><div class="v num" id="calc-manual">0 h</div><div class="l">na planilha</div></div>
+          <div><div class="v num" id="calc-tool">0 h</div><div class="l">com a ferramenta</div></div>
+        </div>
+        <div class="calc-sub" id="calc-formula"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="limites" style="padding-top:8px">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Limites e próximos passos</p>
+      <h2>O que este projeto não prova</h2>
+    </div>
+    <div class="limits">
+      <article class="limit reveal"><h3>Dados sintéticos</h3><p>Os erros foram plantados por quem escreveu o motor. Isso mede se as regras funcionam, não se cobrem os erros que aparecem na vida real. Com dados reais, o primeiro passo é rodar em paralelo à planilha por algumas semanas e comparar.</p></article>
+      <article class="limit reveal"><h3>Modelo pequeno, tarefa estreita</h3><p>O modelo local tem <span data-fact="constantes.parametros_modelo_bilhoes">2</span> bilhões de parâmetros e roda em processador comum. Ele foi bem ao ler a nota do atendimento, mas errou fatos ao escrever cartas e resumos, e as checagens de número não pegam erro de sentido. Aqui ele só classifica; quem escreve é o código. Com um modelo maior, vale testar de novo.</p></article>
+      <article class="limit reveal"><h3>Riscos que continuam</h3><p>Uma regra errada erra em escala. Notas de atendimento podem enganar o modelo. Cartas automáticas exigem revisão antes do envio. Por isso a fila de revisão é parte do produto, não um detalhe.</p></article>
+      <article class="limit reveal"><h3>Com dados reais</h3><p>Conectar direto ao banco de dados e à API do banco, guardar o histórico das decisões da revisão e usar essas decisões para medir a qualidade semana a semana.</p></article>
+      <article class="limit reveal"><h3>Privacidade</h3><p>O modelo roda local, então nenhum dado sai da máquina. O app em Streamlit aceita arquivos reais sem enviar nada para fora.</p></article>
+      <article class="limit reveal"><h3>Próximos passos</h3><p>Regras configuráveis pelo próprio financeiro, alerta quando um restaurante acumula divergências e um teste com arquivos próprios direto no navegador.</p></article>
+    </div>
+  </div>
+</section>
+</main>
+
+<dialog id="ev-dialog" closedby="any" aria-labelledby="ev-title">
+  <div class="dialog-head"><h3 id="ev-title">Evidências</h3><button class="close" type="button" data-close aria-label="Fechar">×</button></div>
+  <div class="dialog-body" id="ev-body"></div>
+</dialog>
+
+<footer class="dark">
+  <div class="wrap">
+    <p><strong>Conciliador de repasses.</strong> Projeto de portfólio sobre IA aplicada a operações financeiras. Código, testes e instruções para reproduzir no <a href="https://github.com/AndreiLud/conciliador-de-repasses">repositório do GitHub</a>.</p>
+    <p>Dados sintéticos, gerados com semente fixa. O Talher, os restaurantes, os CNPJs, as taxas e os planos são fictícios. Atualizado em <span data-fact="gerado_em">06/11/2026</span>.</p>
+  </div>
+</footer>
+</body>
+</html>

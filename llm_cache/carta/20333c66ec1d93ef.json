@@ -1,0 +1,15 @@
+{
+ "key": "20333c66ec1d93ef9f3273badca168c772c086df5596754cc12572621867bf43",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T00:21:21+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Nagoya Sushi\",\"periodo\":\"de 28 de setembro a 4 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Cupom da plataforma cobrado do restaurante\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"No pedido 315330029, o cupom TALHER10 é pago pela plataforma, mas foi descontado do restaurante.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"No pedido 315330029, o cupom TALHER10 foi pago pela plataforma, mas foi descontado do restaurante. Isso significa que o valor que deveria ter sido recebido foi reduzido por essa diferença.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 426,
+  "tokens_out": 67,
+  "seconds": 36.39
+ }
+}

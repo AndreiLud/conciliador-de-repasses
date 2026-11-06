@@ -1,0 +1,15 @@
+{
+ "key": "a52c6ce2daad6fc18d6ea59784cf4a7364cf45e4a52fcd6b66bb4f3816d1ed9a",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T02:47:06+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Marmitaria do Trabalhador\",\"periodo\":\"de 5 a 11 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Plano antigo aplicado depois da troca\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"Vocês trocaram do plano Completo para o plano Essencial em 10/10/2026, mas pedidos feitos depois da troca ainda foram calculados com as regras do plano Completo.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"A partir de 10 de outubro de 2026, o restaurante passou a receber menos por causa da troca do plano para o Essencial. Os pedidos feitos depois dessa data ainda seguem as regras do plano antigo, que é o que foi aplicado antes da mudança.\",\n    \"A tabela abaixo mostra os valores reais que o restaurante recebeu durante esse período.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 436,
+  "tokens_out": 94,
+  "seconds": 43.44
+ }
+}

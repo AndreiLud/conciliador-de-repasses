@@ -1,0 +1,15 @@
+{
+ "key": "28e0ad6223adf186857a9ac32f07aad1e12ec0436b9691201f4048e92be733ac",
+ "task": "dono_estorno",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T02:25:48+00:00",
+ "system_sha256": "002e2c5cd24900efb55d308ed0ffa4f21a1b5906714b061fc9dec3889ab5b556",
+ "user": "Nota do atendimento: \"rota do entregador errada, pedido rodou a cidade\"",
+ "response": "{\"trecho\": \"rota do entregador errada\", \"responsavel\": \"plataforma\", \"confianca\": 0.9}",
+ "usage": {
+  "tokens_in": 460,
+  "tokens_out": 33,
+  "seconds": 12.55
+ }
+}

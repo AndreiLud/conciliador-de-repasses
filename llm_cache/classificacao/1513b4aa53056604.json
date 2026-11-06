@@ -1,0 +1,15 @@
+{
+ "key": "1513b4aa530566041fa52be5eeee5013bbaaa04b88ca53794dbea20defb51e4c",
+ "task": "classificacao",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T02:36:16+00:00",
+ "system_sha256": "351a0faa537fa040e239c2c450994a50cf8c13b90b80235d36c3f44f4b5cfb1b",
+ "user": "Classifique o caso abaixo.\n\n{\"situacao\":\"linha de pedido com valor líquido diferente do recalculado (extrato legado, só o líquido)\",\"restaurante_id\":\"R0042\",\"semana\":\"2026-W40\",\"diferenca_no_repasse\":\"-R$ 8,00\",\"opcoes\":[\"comissao_taxa_errada\",\"comissao_plano_antigo\",\"taxa_pagamento_errada\",\"cupom_plataforma_cobrado\",\"outro\"],\"evidencias\":[{\"id\":\"pedido:330446407\",\"fonte\":\"base de pedidos\",\"dados\":{\"pedido_id\":\"330446407\",\"criado_em\":\"01/10/2026 19:53\",\"concluido_em\":\"01/10/2026 20:44\",\"forma_pagamento\":\"Pix\",\"valor_itens\":\"R$ 64,00\",\"taxa_entrega\":\"R$ 0,00\",\"cupom\":\"SEXTOU8 de R$ 8,00, pago pela plataforma\",\"total_pago_cliente\":\"R$ 56,00\"}},{\"id\":\"contrato:COM-v1\",\"fonte\":\"contratos.xlsx\",\"dados\":{\"plano\":\"Completo\",\"versao\":1,\"comissao\":\"23%\",\"taxa_da_forma_de_pagamento\":\"0,99%\",\"entrega\":\"da plataforma (taxa fica com a plataforma)\"}},{\"id\":\"linha:L002577\",\"fonte\":\"extrato de repasse\",\"dados\":{\"linha_id\":\"L002577\",\"repasse_id\":\"REP-2026W40-R0042\",\"layout\":\"legado\",\"descricao\":\"Repasse pedido 330446407\",\"valor_liquido\":\"R$ 40,73\"}},{\"id\":\"calculo:330446407\",\"fonte\":\"recálculo do motor\",\"dados\":{\"comissao\":\"R$ 14,72\",\"taxa_pagamento\":\"R$ 0,55\",\"cupom_descontado\":\"R$ 0,00\",\"entrega_repassada\":\"R$ 0,00\",\"liquido_esperado\":\"R$ 48,73\",\"diferenca\":\"-R$ 8,00\"}}],\"hipoteses_calculadas\":[{\"tipo\":\"cupom_plataforma_cobrado\",\"descricao\":\"cupom SEXTOU8 da plataforma descontado do restaurante\",\"liquido_hipotese_brl\":\"R$ 40,73\",\"confere\":true},{\"tipo\":\"taxa_pagamento_errada\",\"descricao\":\"taxa de vale-refeição (4,9%, versão 1) no lugar da correta\",\"liquido_hipotese_brl\":\"R$ 46,54\",\"confere\":false},{\"tipo\":\"comissao_taxa_errada\",\"descricao\":\"comissão de 35,5% no lugar de 23%\",\"liquido_hipotese_brl\":\"R$ 40,73\",\"confere\":true}]}\n\nSua resposta anterior teve estes problemas: tipo escolhido não reproduz o valor do extrato; escolha uma hipótese que confere. Responda de novo corrigindo.",
+ "response": "{\n  \"tipo\": \"comissao_plano_antigo\",\n  \"confianca\": 1,\n  \"evidencias\": [\n    \"pedido:330446407\",\n    \"contrato:COM-v1\",\n    \"linha:L002577\",\n    \"calculo:330446407\"\n  ],\n  \"explicacao\": \"A divergência entre o valor líquido no extrato legado e o recalculado é atribuída à aplicação de uma comissão de 35,5% no lugar da correta de 23%, conforme o contrato e o cálculo do motor.\"\n}",
+ "usage": {
+  "tokens_in": 1034,
+  "tokens_out": 151,
+  "seconds": 125.26
+ }
+}

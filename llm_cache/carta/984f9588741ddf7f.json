@@ -1,0 +1,15 @@
+{
+ "key": "984f9588741ddf7f45b8a28495ebfc50c4106befce37ccdd255ebb7bc2659376",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T01:31:49+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Sustança Marmitas\",\"periodo\":\"de 26 de outubro a 1 de novembro de 2026\",\"diferencas\":[{\"tipo\":\"Comissão com taxa errada\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"No pedido 590007858, a comissão foi calculada com uma taxa maior do que a prevista no contrato.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"Durante o período de 26 de outubro a 1 de novembro de 2026, o restaurante recebeu uma comissão menor do que o contrato previa para o pedido 590007858. A equipe financeira verificou que a taxa aplicada foi maior do que a prevista no acordo, o que resultou na diferença observada no valor final.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 422,
+  "tokens_out": 95,
+  "seconds": 41.48
+ }
+}

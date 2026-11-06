@@ -1,0 +1,15 @@
+{
+ "key": "4333e2fae9ee610efa9f293e46469a774a615700a861b5af6e7d8c158b597668",
+ "task": "dono_estorno",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T02:25:10+00:00",
+ "system_sha256": "002e2c5cd24900efb55d308ed0ffa4f21a1b5906714b061fc9dec3889ab5b556",
+ "user": "Nota do atendimento: \"pedido com problema\"",
+ "response": "{\"trecho\": \"pedido com problema\", \"responsavel\": \"indefinido\", \"confianca\": 0.4}",
+ "usage": {
+  "tokens_in": 450,
+  "tokens_out": 29,
+  "seconds": 9.99
+ }
+}

@@ -1,0 +1,12 @@
+data/raw/
+data/interim/
+.env
+.venv/
+__pycache__/
+pycache/
+.ipynb_checkpoints/
+.claude/
+CLAUDE.md
+.DS_Store
+.pytest_cache/
+models/

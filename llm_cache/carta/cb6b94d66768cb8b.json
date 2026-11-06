@@ -1,0 +1,15 @@
+{
+ "key": "cb6b94d66768cb8bd42e9ac9a422190660ac6d396a06669eda14821366b234e3",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T02:45:36+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Marmitaria da Praça\",\"periodo\":\"de 5 a 11 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Plano antigo aplicado depois da troca\",\"efeito\":\"o restaurante recebeu a mais\",\"o_que_aconteceu\":\"Vocês trocaram do plano Parceiro Plus para o plano Completo em 09/10/2026, mas pedidos feitos depois da troca ainda foram calculados com as regras do plano Parceiro Plus.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"A partir de 09 de outubro de 2026, o restaurante passou a receber mais dinheiro por causa da troca do plano. Antes, todos os pedidos eram calculados com as regras do plano Parceiro Plus. Agora, os pedidos feitos depois dessa data já usam as regras do plano Completo, que é mais caro.\",\n    \"A tabela abaixo mostra os valores que foram pagos. Se você quiser saber exatamente quantos reais cada pedido custou, basta olhar a coluna de 'Valor Pago'.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 438,
+  "tokens_out": 122,
+  "seconds": 50.44
+ }
+}

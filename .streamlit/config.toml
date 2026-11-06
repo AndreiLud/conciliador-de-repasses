@@ -1,0 +1,3 @@
+# Keep everything on this machine: no usage statistics sent by Streamlit.
+[browser]
+gatherUsageStats = false

@@ -1,0 +1,15 @@
+{
+ "key": "2868af1ae0d3c2c27eac211bf4322fe4f2f8458da606a99d2326a1d7a01a2ad0",
+ "task": "dono_estorno",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T02:29:04+00:00",
+ "system_sha256": "002e2c5cd24900efb55d308ed0ffa4f21a1b5906714b061fc9dec3889ab5b556",
+ "user": "Nota do atendimento: \"rapaz da entrega sumiu com o pedido\"",
+ "response": "{\"trecho\": \"rapaz da entrega sumiu\", \"responsavel\": \"plataforma\", \"confianca\": 0.9}",
+ "usage": {
+  "tokens_in": 456,
+  "tokens_out": 32,
+  "seconds": 11.65
+ }
+}

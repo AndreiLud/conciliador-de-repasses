@@ -1,0 +1,34 @@
+{
+  "seed": 20261005,
+  "n_restaurants": 200,
+  "mean_orders_per_day": 8.5,
+  "cancel_rate": 0.016,
+  "refund_rate": 0.013,
+  "refund_restaurant_share": 0.7,
+  "refund_hidden_owner_share": 0.25,
+  "refund_not_deducted_hidden": 8,
+  "coupon_rate": 0.18,
+  "coupon_platform_share": 0.6,
+  "legacy_layout_share": 0.25,
+  "n_plan_changes": 20,
+  "n_similar_name_pairs": 8,
+  "n_duplicate_export_rows": 12,
+  "errors": {
+    "comissao_taxa_errada": 25,
+    "comissao_plano_antigo": 8,
+    "taxa_pagamento_errada": 25,
+    "cupom_plataforma_cobrado": 20,
+    "estorno_nao_descontado": 15,
+    "estorno_duplicado": 10,
+    "pedido_duplicado": 15,
+    "pedido_ausente": 20,
+    "transferencia_divergente": 8,
+    "repasse_duplicado": 4
+  },
+  "traps": {
+    "arredondamento_centavos": 80,
+    "ajuste_manual_legitimo": 30,
+    "estorno_complementar": 10,
+    "pix_devolvido_reenviado": 5
+  }
+}

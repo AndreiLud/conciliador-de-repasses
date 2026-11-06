@@ -1,0 +1,15 @@
+{
+ "key": "fee449098ffb5a5ea0ac6747f75e70809f5f4bb158fc4f78d6d6fa9ea371a2f5",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T02:50:05+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Restaurante Sabor da Vila\",\"periodo\":\"de 19 a 25 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Plano antigo aplicado depois da troca\",\"efeito\":\"o restaurante recebeu a mais\",\"o_que_aconteceu\":\"Vocês trocaram do plano Essencial para o plano Parceiro Plus em 20/10/2026, mas pedidos feitos depois da troca ainda foram calculados com as regras do plano Essencial.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"A partir de 20 de outubro de 2026, o restaurante passou a receber o valor do plano Parceiro Plus. No entanto, os pedidos feitos após essa data ainda seguem os cálculos do plano antigo, Essencial.\",\n    \"Isso significa que a diferença entre os valores de cada pedido foi calculada antes da mudança de plano, mesmo que o pedido tenha sido realizado depois.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 441,
+  "tokens_out": 101,
+  "seconds": 45.84
+ }
+}

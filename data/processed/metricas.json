@@ -1,0 +1,592 @@
+{
+ "regras": {
+  "erros_plantados": 150,
+  "divergencias_sinalizadas": 180,
+  "divergencias_confirmadas": 152,
+  "em_revisao": 28,
+  "deteccao": {
+   "revocacao": 1.0,
+   "precisao": 0.8333
+  },
+  "automatico": {
+   "revocacao": 0.9667,
+   "precisao": 0.9539,
+   "acertos": 145,
+   "valor_exato": 145
+  },
+  "confirmadas_por": {
+   "regra": 137,
+   "regra_base": 15
+  },
+  "por_tipo": {
+   "comissao_taxa_errada": {
+    "casos": 25,
+    "detectados": 25,
+    "confirmados_certos": 25,
+    "confirmados": 25,
+    "precisao": 1.0,
+    "revocacao": 1.0,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": -3325,
+    "valor_a_mais_centavos": 1062,
+    "valor_a_menos_centavos": 4387
+   },
+   "comissao_plano_antigo": {
+    "casos": 8,
+    "detectados": 8,
+    "confirmados_certos": 8,
+    "confirmados": 8,
+    "precisao": 1.0,
+    "revocacao": 1.0,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": 258074,
+    "valor_a_mais_centavos": 381268,
+    "valor_a_menos_centavos": 123194
+   },
+   "taxa_pagamento_errada": {
+    "casos": 25,
+    "detectados": 25,
+    "confirmados_certos": 25,
+    "confirmados": 25,
+    "precisao": 1.0,
+    "revocacao": 1.0,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": -2383,
+    "valor_a_mais_centavos": 899,
+    "valor_a_menos_centavos": 3282
+   },
+   "cupom_plataforma_cobrado": {
+    "casos": 20,
+    "detectados": 20,
+    "confirmados_certos": 20,
+    "confirmados": 20,
+    "precisao": 1.0,
+    "revocacao": 1.0,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": -19368,
+    "valor_a_mais_centavos": 0,
+    "valor_a_menos_centavos": 19368
+   },
+   "estorno_nao_descontado": {
+    "casos": 15,
+    "detectados": 15,
+    "confirmados_certos": 10,
+    "confirmados": 17,
+    "precisao": 0.5882,
+    "revocacao": 0.6667,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": 59090,
+    "valor_a_mais_centavos": 59090,
+    "valor_a_menos_centavos": 0
+   },
+   "estorno_duplicado": {
+    "casos": 10,
+    "detectados": 10,
+    "confirmados_certos": 10,
+    "confirmados": 10,
+    "precisao": 1.0,
+    "revocacao": 1.0,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": -43590,
+    "valor_a_mais_centavos": 0,
+    "valor_a_menos_centavos": 43590
+   },
+   "pedido_duplicado": {
+    "casos": 15,
+    "detectados": 15,
+    "confirmados_certos": 15,
+    "confirmados": 15,
+    "precisao": 1.0,
+    "revocacao": 1.0,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": 65638,
+    "valor_a_mais_centavos": 65638,
+    "valor_a_menos_centavos": 0
+   },
+   "pedido_ausente": {
+    "casos": 20,
+    "detectados": 20,
+    "confirmados_certos": 20,
+    "confirmados": 20,
+    "precisao": 1.0,
+    "revocacao": 1.0,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": -112861,
+    "valor_a_mais_centavos": 0,
+    "valor_a_menos_centavos": 112861
+   },
+   "transferencia_divergente": {
+    "casos": 8,
+    "detectados": 8,
+    "confirmados_certos": 8,
+    "confirmados": 8,
+    "precisao": 1.0,
+    "revocacao": 1.0,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": 520471,
+    "valor_a_mais_centavos": 551800,
+    "valor_a_menos_centavos": 31329
+   },
+   "repasse_duplicado": {
+    "casos": 4,
+    "detectados": 4,
+    "confirmados_certos": 4,
+    "confirmados": 4,
+    "precisao": 1.0,
+    "revocacao": 1.0,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": 964804,
+    "valor_a_mais_centavos": 964804,
+    "valor_a_menos_centavos": 0
+   }
+  },
+  "armadilhas": {
+   "casos": 1908,
+   "falso_positivo": 7,
+   "em_revisao": 23,
+   "taxa_falso_positivo": 0.0037,
+   "por_tipo": {
+    "estorno_complementar": {
+     "casos": 10,
+     "falso_positivo": 0,
+     "em_revisao": 0,
+     "taxa_falso_positivo": 0.0
+    },
+    "arredondamento_centavos": {
+     "casos": 80,
+     "falso_positivo": 0,
+     "em_revisao": 0,
+     "taxa_falso_positivo": 0.0
+    },
+    "ajuste_manual_legitimo": {
+     "casos": 30,
+     "falso_positivo": 0,
+     "em_revisao": 0,
+     "taxa_falso_positivo": 0.0
+    },
+    "pedido_virada_de_semana": {
+     "casos": 384,
+     "falso_positivo": 0,
+     "em_revisao": 0,
+     "taxa_falso_positivo": 0.0
+    },
+    "pedido_fora_do_periodo": {
+     "casos": 95,
+     "falso_positivo": 0,
+     "em_revisao": 0,
+     "taxa_falso_positivo": 0.0
+    },
+    "cancelado_antes_do_preparo": {
+     "casos": 1060,
+     "falso_positivo": 0,
+     "em_revisao": 0,
+     "taxa_falso_positivo": 0.0
+    },
+    "estorno_da_plataforma": {
+     "casos": 244,
+     "falso_positivo": 7,
+     "em_revisao": 23,
+     "taxa_falso_positivo": 0.0287
+    },
+    "pix_devolvido_reenviado": {
+     "casos": 5,
+     "falso_positivo": 0,
+     "em_revisao": 0,
+     "taxa_falso_positivo": 0.0
+    }
+   }
+  },
+  "confirmadas_fora_do_gabarito": 7,
+  "confirmadas_sem_explicacao": 0,
+  "valor": {
+   "a_mais_restaurante_real": 2024561,
+   "a_menos_restaurante_real": 338011,
+   "a_mais_restaurante_achado": 2001231,
+   "a_menos_restaurante_achado": 338011
+  },
+  "ambiguos": {
+   "casos": 68,
+   "regra_base": {
+    "acertos": 33,
+    "erros": 7,
+    "revisao": 28,
+    "acuracia_decididos": 0.825,
+    "acerto_automatico": 0.4853
+   },
+   "ia_sozinha": {
+    "acertos": 0,
+    "erros": 0,
+    "revisao": 68,
+    "acuracia_decididos": null,
+    "acerto_automatico": 0.0
+   },
+   "ia": {
+    "acertos": 0,
+    "erros": 0,
+    "revisao": 68,
+    "acuracia_decididos": null,
+    "acerto_automatico": 0.0
+   },
+   "por_familia": {
+    "estorno_ausente_dono_indefinido": {
+     "casos": 63,
+     "regra_base": {
+      "acertos": 28,
+      "erros": 7,
+      "revisao": 28
+     },
+     "ia_sozinha": {
+      "acertos": 0,
+      "erros": 0,
+      "revisao": 63
+     },
+     "ia": {
+      "acertos": 0,
+      "erros": 0,
+      "revisao": 63
+     }
+    },
+    "linha_pedido": {
+     "casos": 5,
+     "regra_base": {
+      "acertos": 5,
+      "erros": 0,
+      "revisao": 0
+     },
+     "ia_sozinha": {
+      "acertos": 0,
+      "erros": 0,
+      "revisao": 5
+     },
+     "ia": {
+      "acertos": 0,
+      "erros": 0,
+      "revisao": 5
+     }
+    }
+   }
+  }
+ },
+ "ia": {
+  "erros_plantados": 150,
+  "divergencias_sinalizadas": 163,
+  "divergencias_confirmadas": 145,
+  "em_revisao": 18,
+  "deteccao": {
+   "revocacao": 1.0,
+   "precisao": 0.9202
+  },
+  "automatico": {
+   "revocacao": 0.9667,
+   "precisao": 1.0,
+   "acertos": 145,
+   "valor_exato": 145
+  },
+  "confirmadas_por": {
+   "regra": 137,
+   "ia": 3,
+   "regra_base": 5
+  },
+  "por_tipo": {
+   "comissao_taxa_errada": {
+    "casos": 25,
+    "detectados": 25,
+    "confirmados_certos": 25,
+    "confirmados": 25,
+    "precisao": 1.0,
+    "revocacao": 1.0,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": -3325,
+    "valor_a_mais_centavos": 1062,
+    "valor_a_menos_centavos": 4387
+   },
+   "comissao_plano_antigo": {
+    "casos": 8,
+    "detectados": 8,
+    "confirmados_certos": 8,
+    "confirmados": 8,
+    "precisao": 1.0,
+    "revocacao": 1.0,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": 258074,
+    "valor_a_mais_centavos": 381268,
+    "valor_a_menos_centavos": 123194
+   },
+   "taxa_pagamento_errada": {
+    "casos": 25,
+    "detectados": 25,
+    "confirmados_certos": 25,
+    "confirmados": 25,
+    "precisao": 1.0,
+    "revocacao": 1.0,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": -2383,
+    "valor_a_mais_centavos": 899,
+    "valor_a_menos_centavos": 3282
+   },
+   "cupom_plataforma_cobrado": {
+    "casos": 20,
+    "detectados": 20,
+    "confirmados_certos": 20,
+    "confirmados": 20,
+    "precisao": 1.0,
+    "revocacao": 1.0,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": -19368,
+    "valor_a_mais_centavos": 0,
+    "valor_a_menos_centavos": 19368
+   },
+   "estorno_nao_descontado": {
+    "casos": 15,
+    "detectados": 15,
+    "confirmados_certos": 10,
+    "confirmados": 10,
+    "precisao": 1.0,
+    "revocacao": 0.6667,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": 59090,
+    "valor_a_mais_centavos": 59090,
+    "valor_a_menos_centavos": 0
+   },
+   "estorno_duplicado": {
+    "casos": 10,
+    "detectados": 10,
+    "confirmados_certos": 10,
+    "confirmados": 10,
+    "precisao": 1.0,
+    "revocacao": 1.0,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": -43590,
+    "valor_a_mais_centavos": 0,
+    "valor_a_menos_centavos": 43590
+   },
+   "pedido_duplicado": {
+    "casos": 15,
+    "detectados": 15,
+    "confirmados_certos": 15,
+    "confirmados": 15,
+    "precisao": 1.0,
+    "revocacao": 1.0,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": 65638,
+    "valor_a_mais_centavos": 65638,
+    "valor_a_menos_centavos": 0
+   },
+   "pedido_ausente": {
+    "casos": 20,
+    "detectados": 20,
+    "confirmados_certos": 20,
+    "confirmados": 20,
+    "precisao": 1.0,
+    "revocacao": 1.0,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": -112861,
+    "valor_a_mais_centavos": 0,
+    "valor_a_menos_centavos": 112861
+   },
+   "transferencia_divergente": {
+    "casos": 8,
+    "detectados": 8,
+    "confirmados_certos": 8,
+    "confirmados": 8,
+    "precisao": 1.0,
+    "revocacao": 1.0,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": 520471,
+    "valor_a_mais_centavos": 551800,
+    "valor_a_menos_centavos": 31329
+   },
+   "repasse_duplicado": {
+    "casos": 4,
+    "detectados": 4,
+    "confirmados_certos": 4,
+    "confirmados": 4,
+    "precisao": 1.0,
+    "revocacao": 1.0,
+    "revocacao_deteccao": 1.0,
+    "valor_centavos": 964804,
+    "valor_a_mais_centavos": 964804,
+    "valor_a_menos_centavos": 0
+   }
+  },
+  "armadilhas": {
+   "casos": 1908,
+   "falso_positivo": 0,
+   "em_revisao": 13,
+   "taxa_falso_positivo": 0.0,
+   "por_tipo": {
+    "estorno_complementar": {
+     "casos": 10,
+     "falso_positivo": 0,
+     "em_revisao": 0,
+     "taxa_falso_positivo": 0.0
+    },
+    "arredondamento_centavos": {
+     "casos": 80,
+     "falso_positivo": 0,
+     "em_revisao": 0,
+     "taxa_falso_positivo": 0.0
+    },
+    "ajuste_manual_legitimo": {
+     "casos": 30,
+     "falso_positivo": 0,
+     "em_revisao": 0,
+     "taxa_falso_positivo": 0.0
+    },
+    "pedido_virada_de_semana": {
+     "casos": 384,
+     "falso_positivo": 0,
+     "em_revisao": 0,
+     "taxa_falso_positivo": 0.0
+    },
+    "pedido_fora_do_periodo": {
+     "casos": 95,
+     "falso_positivo": 0,
+     "em_revisao": 0,
+     "taxa_falso_positivo": 0.0
+    },
+    "cancelado_antes_do_preparo": {
+     "casos": 1060,
+     "falso_positivo": 0,
+     "em_revisao": 0,
+     "taxa_falso_positivo": 0.0
+    },
+    "estorno_da_plataforma": {
+     "casos": 244,
+     "falso_positivo": 0,
+     "em_revisao": 13,
+     "taxa_falso_positivo": 0.0
+    },
+    "pix_devolvido_reenviado": {
+     "casos": 5,
+     "falso_positivo": 0,
+     "em_revisao": 0,
+     "taxa_falso_positivo": 0.0
+    }
+   }
+  },
+  "confirmadas_fora_do_gabarito": 0,
+  "confirmadas_sem_explicacao": 0,
+  "valor": {
+   "a_mais_restaurante_real": 2024561,
+   "a_menos_restaurante_real": 338011,
+   "a_mais_restaurante_achado": 2001231,
+   "a_menos_restaurante_achado": 338011
+  },
+  "ambiguos": {
+   "casos": 68,
+   "regra_base": {
+    "acertos": 33,
+    "erros": 7,
+    "revisao": 28,
+    "acuracia_decididos": 0.825,
+    "acerto_automatico": 0.4853
+   },
+   "ia_sozinha": {
+    "acertos": 49,
+    "erros": 3,
+    "revisao": 16,
+    "acuracia_decididos": 0.9423,
+    "acerto_automatico": 0.7206
+   },
+   "ia": {
+    "acertos": 50,
+    "erros": 0,
+    "revisao": 18,
+    "acuracia_decididos": 1.0,
+    "acerto_automatico": 0.7353
+   },
+   "por_familia": {
+    "estorno_ausente_dono_indefinido": {
+     "casos": 63,
+     "regra_base": {
+      "acertos": 28,
+      "erros": 7,
+      "revisao": 28
+     },
+     "ia_sozinha": {
+      "acertos": 48,
+      "erros": 0,
+      "revisao": 15
+     },
+     "ia": {
+      "acertos": 45,
+      "erros": 0,
+      "revisao": 18
+     }
+    },
+    "linha_pedido": {
+     "casos": 5,
+     "regra_base": {
+      "acertos": 5,
+      "erros": 0,
+      "revisao": 0
+     },
+     "ia_sozinha": {
+      "acertos": 1,
+      "erros": 3,
+      "revisao": 1
+     },
+     "ia": {
+      "acertos": 5,
+      "erros": 0,
+      "revisao": 0
+     }
+    }
+   }
+  }
+ },
+ "ia_uso": {
+  "ligada": true,
+  "custo_api": 0,
+  "provedor": "llamacpp",
+  "modelo": "qwen3.5-2b-q4_k_m",
+  "modo": "offline",
+  "chamadas": 69,
+  "respostas_do_cache": 69,
+  "chamadas_novas": 0,
+  "faltas_no_cache_offline": 0,
+  "tokens_entrada": 34694,
+  "tokens_saida": 3112,
+  "segundos_de_maquina": 1896.3,
+  "segundos_nesta_execucao": 0.0,
+  "tokens_saida_por_segundo": 1.64,
+  "por_tarefa": {
+   "dono_estorno": {
+    "calls": 63,
+    "tokens_in": 28760,
+    "tokens_out": 2156,
+    "seconds": 1044.7
+   },
+   "classificacao": {
+    "calls": 6,
+    "tokens_in": 5934,
+    "tokens_out": 956,
+    "seconds": 851.7
+   }
+  },
+  "cartas": {
+   "total": 134,
+   "texto_da_ia": 0,
+   "modelo_fixo": 134,
+   "ia_aprovada_na_primeira": 0,
+   "ia_aprovada_na_segunda": 0,
+   "cartas_finais_com_problema_de_estilo": 0,
+   "cartas_finais_com_numero_fora_dos_dados": 0,
+   "resumos": 5,
+   "resumos_com_leitura_da_ia": 0,
+   "resumos_com_problema": 0
+  }
+ },
+ "execucao": {
+  "segundos_total": 19.0,
+  "segundos_so_regras": 9.4,
+  "etapas": {
+   "ingestao_s": 1.95,
+   "sql_s": 0.82,
+   "regras_s": 6.48,
+   "ia_classificacao_s": 0.05
+  },
+  "segundos_cartas_e_resumos": 0.0
+ }
+}

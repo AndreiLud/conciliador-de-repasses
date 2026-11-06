@@ -1,0 +1,15 @@
+{
+ "key": "d5d78425bb675339709641d84a6c80b8de9f692d434ac65759b01ac5443c7b4a",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T00:51:52+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Nonna Rosa Pizzas\",\"periodo\":\"de 12 a 18 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Pedido entregue fora do repasse\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"O pedido 507626207 foi entregue, mas não entrou no repasse.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"O pedido 507626207 foi entregue, mas não entrou no repasse.\",\n    \"O restaurante recebeu a menos itens do que o esperado.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 413,
+  "tokens_out": 54,
+  "seconds": 30.53
+ }
+}

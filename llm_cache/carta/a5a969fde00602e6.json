@@ -1,0 +1,15 @@
+{
+ "key": "a5a969fde00602e6fc06e3f48157985b6f366f6ff141f3fead05093fff2aba73",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T00:49:59+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Restaurante Panela de Barro\",\"periodo\":\"de 5 a 11 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Taxa de pagamento errada\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"No pedido 389735883, a taxa de pagamento usada foi a de outra forma de pagamento, mais cara do que a correta.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"Durante a semana de 5 a 11 de outubro de 2026, no pedido 389735883, houve um erro na taxa de pagamento. O restaurante recebeu um valor menor do que o correto, pois foi aplicada uma taxa mais cara do que a de outra forma de pagamento.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 426,
+  "tokens_out": 88,
+  "seconds": 40.45
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "key": "fb9accd7fc28031bc2f45a907c38545f9cb4fdc634127f132986bb285a49cd48",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T01:19:38+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Restaurante Nagoya\",\"periodo\":\"de 19 a 25 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Pedido entregue fora do repasse\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"O pedido 574410663 foi entregue, mas não entrou no repasse.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"Durante a semana de 19 a 25 de outubro de 2026, o pedido 574410663 foi entregue, mas não entrou no repasse. Isso significa que o restaurante recebeu a quantidade menor que o esperado para aquele período.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 413,
+  "tokens_out": 77,
+  "seconds": 36.02
+ }
+}

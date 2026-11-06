@@ -1,0 +1,15 @@
+{
+ "key": "3f1f1a1313da74734adfee36c11cadc29197088ff7a207c6257159f3ac796330",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T00:13:23+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Pizzaria Calabresa\",\"periodo\":\"de 28 de setembro a 4 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Estorno descontado duas vezes\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"O estorno do pedido 315546836 foi descontado duas vezes.\"},{\"tipo\":\"Pedido entregue fora do repasse\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"O pedido 348633457 foi entregue, mas não entrou no repasse.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"O pedido 315546836 foi cancelado, mas o valor foi descontado duas vezes, reduzindo o total recebido. O pedido 348633457 foi entregue, porém não foi incluído no repasse mensal.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 461,
+  "tokens_out": 75,
+  "seconds": 43.39
+ }
+}

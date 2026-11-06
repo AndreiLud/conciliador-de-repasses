@@ -1,0 +1,15 @@
+{
+ "key": "75aa16dd4d57c76e344c047a4d938d2db260d392c4d648b664d0ca9b474f8fbb",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T00:49:19+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Restaurante Kaizen\",\"periodo\":\"de 5 a 11 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Comissão com taxa errada\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"No pedido 375185602, a comissão foi calculada com uma taxa maior do que a prevista no contrato.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"Durante a semana de 5 a 11 de outubro de 2026, no pedido 375185602, a comissão calculada para o restaurante foi maior do que a prevista no contrato.\",\n    \"Isso resultou na menor quantidade recebida pelo restaurante durante esse período.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 419,
+  "tokens_out": 85,
+  "seconds": 38.7
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "key": "2d98be0ece681438e9ced6562b61e55c02a4f4a14e7b2ba8c28efb3fb939c671",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T01:15:10+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Bella Napoli Pizzas\",\"periodo\":\"de 19 a 25 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Taxa de pagamento errada\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"No pedido 520916778, a taxa de pagamento usada foi a de outra forma de pagamento, mais cara do que a correta.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"Durante a semana de 19 a 25 de outubro de 2026, no pedido 520916778, houve um erro na taxa de pagamento. O restaurante recebeu um valor menor do que o esperado porque a taxa aplicada era a de outra forma de pagamento, que é mais cara do que a correta.\",\n    \"O pedido foi identificado e o valor ajustado para refletir a taxa oficial. A equipe financeira corrigiu a situação imediatamente para evitar qualquer confusão no recibo final.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 424,
+  "tokens_out": 129,
+  "seconds": 49.71
+ }
+}

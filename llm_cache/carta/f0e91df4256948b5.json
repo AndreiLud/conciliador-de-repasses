@@ -1,0 +1,15 @@
+{
+ "key": "f0e91df4256948b53fbcd49f006f0d38ac4ddce9650a98e14f80149619440082",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T01:23:51+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Caseira Marmitas\",\"periodo\":\"de 19 a 25 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Estorno descontado duas vezes\",\"efeito\":\"o restaurante recebeu a menos\",\"o_que_aconteceu\":\"O estorno do pedido 473027261 foi descontado duas vezes.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"O pedido número 473027261 foi cancelado duas vezes durante o período de 19 a 25 de outubro de 2026. Isso significa que o valor do estorno foi descontado do saldo disponível do restaurante duas vezes, reduzindo o total recebido em relação ao valor original.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 412,
+  "tokens_out": 86,
+  "seconds": 37.82
+ }
+}

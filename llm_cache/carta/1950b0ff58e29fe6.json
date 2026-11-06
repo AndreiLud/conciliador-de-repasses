@@ -1,0 +1,15 @@
+{
+ "key": "1950b0ff58e29fe6712c34f850fcd34250c94b14d3691c15471d466c09de3775",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T01:17:43+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Bowl Folha\",\"periodo\":\"de 19 a 25 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Estorno não descontado\",\"efeito\":\"o restaurante recebeu a mais\",\"o_que_aconteceu\":\"O cliente do pedido 510346129 recebeu um estorno por um problema do restaurante (cliente disse que o frango veio cru por dentro), e esse estorno não foi descontado do repasse.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"Durante a semana de 19 a 25 de outubro, o pedido 510346129 foi cancelado por um problema interno do restaurante, fazendo com que o cliente recebesse um estorno. Como esse valor não foi descontado do repasse, o restaurante recebeu a diferença adicional.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 435,
+  "tokens_out": 86,
+  "seconds": 41.65
+ }
+}

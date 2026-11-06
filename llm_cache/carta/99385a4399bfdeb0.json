@@ -1,0 +1,15 @@
+{
+ "key": "99385a4399bfdeb053b5684be814a9770882cf49531aaaa5beb213dd9c0df3a1",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T00:53:04+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Monstro Burger\",\"periodo\":\"de 12 a 18 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Pedido pago em duplicidade\",\"efeito\":\"o restaurante recebeu a mais\",\"o_que_aconteceu\":\"O pedido 387131610 entrou duas vezes no repasse.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"O pedido número 387131610 foi enviado duas vezes para o repasse entre os dias 12 e 18 de outubro de 2026. Isso significa que o restaurante recebeu o valor duas vezes, enquanto o pedido original só deveria ser pago uma vez.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 407,
+  "tokens_out": 80,
+  "seconds": 35.63
+ }
+}

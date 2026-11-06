@@ -1,0 +1,15 @@
+{
+ "key": "f8fe97c7579e03932055078d4cd8e3ce216d7cba6e34ed6f425aa0fdd68e503f",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T00:50:44+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Hamburgueria Monstro\",\"periodo\":\"de 5 a 11 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Estorno não descontado\",\"efeito\":\"o restaurante recebeu a mais\",\"o_que_aconteceu\":\"O cliente do pedido 352350734 recebeu um estorno por um problema do restaurante (cliente disse que o frango veio cru por dentro), e esse estorno não foi descontado do repasse.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"Durante a semana de 5 a 11 de outubro de 2026, o pedido 352350734 foi cancelado por um problema interno do restaurante. O cliente relatou que o frango estava cru por dentro, o que gerou um estorno. Esse valor foi recebido pelo restaurante e não foi descontado do repasse mensal.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 437,
+  "tokens_out": 97,
+  "seconds": 44.32
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "key": "696c13c797e09befafbab3404a147926cfdb48ca663f6f5b4e9fb3183e4174f2",
+ "task": "carta",
+ "provider": "llamacpp",
+ "model": "qwen3.5-2b-q4_k_m",
+ "created_at": "2026-11-06T02:44:45+00:00",
+ "system_sha256": "5908bea56cf3d273ff161d56b3a8f74b464bfc5c370aacafba003354dd96ce75",
+ "user": "Escreva os parágrafos explicativos da carta a partir destes fatos.\n\n{\"restaurante\":\"Temakeria Mizu\",\"periodo\":\"de 5 a 11 de outubro de 2026\",\"diferencas\":[{\"tipo\":\"Plano antigo aplicado depois da troca\",\"efeito\":\"o restaurante recebeu a mais\",\"o_que_aconteceu\":\"Vocês trocaram do plano Parceiro Plus para o plano Completo em 06/10/2026, mas pedidos feitos depois da troca ainda foram calculados com as regras do plano Parceiro Plus.\"}]}",
+ "response": "{\n  \"paragrafos\": [\n    \"A partir de 06/10/2026, o restaurante passou a receber o valor do plano Completo, mas pedidos feitos antes dessa data ainda seguem os cálculos do plano antigo.\",\n    \"Se você fez um pedido nesse período, o valor será diferente do que você pagou anteriormente, pois a regra mudou no dia da troca.\"\n  ]\n}",
+ "usage": {
+  "tokens_in": 438,
+  "tokens_out": 92,
+  "seconds": 43.29
+ }
+}
